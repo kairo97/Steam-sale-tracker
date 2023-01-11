@@ -1,25 +1,25 @@
 //jQuery selectors
-var newsTitle = document.getElementById('')
-// var
+// var newsTitle = document.querySelector('#gaming-news')
+
 // var
 // var
 
 // Games Data API Connection
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
-		'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
-	}
-};
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
+// 		'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
+// 	}
+// };
 
-fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1593500', options)
-	.then((data) => {
-		return data.json();
-	}).then((completedata)=>{
-        console.log(completedata)
-        // let newsTitle = completedata[0].title})
+// fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1593500', options)
+	// .then((data) => {
+	// 	return data.json();
+	// }).then((completedata)=>{
+    //     console.log(completedata)
+    //     // let newsTitle = completedata[0].title})
 	
 
 
@@ -39,10 +39,6 @@ fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1593500', 
 		return data.json();
 	}).then((completedata)=>{
 
-        let i=0;
-
-        while (i<=10){
-            var newsTracker = $
 
             console.log(completedata[i].title);
             i++;
@@ -52,7 +48,7 @@ fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1593500', 
 
 	})
 
-    })
+    
 
 
 
