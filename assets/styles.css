@@ -1,0 +1,18 @@
+.checkBoxes ul{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 22%;
+}
+/* 
+@media screen and (max-width: 600px) {
+    .checkBoxes ul {
+      float: none;
+      width: 100%;
+    }
+  } */
