@@ -3,6 +3,21 @@
     color:#52796f;
     font-family: 'Courier New', Courier, monospace;
 }
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 22%;
+}
+.checkBoxes ul{
+    display: inline;
+}
+*{
+    background-color: #354f25;
+    color:#52796f;
+    font-family: 'Courier New', Courier, monospace;
+}
 .checkBoxes ul{
     display: flex;
     justify-content: space-around;
@@ -33,7 +48,8 @@ h1{
     justify-content: center;
     background-color: darkslategray;
     bottom:0auto;
-} h3{
+}
+ h3{
     display:flex ;
     flex-direction: row;
     background-color: darkslategray;
