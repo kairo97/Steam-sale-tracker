@@ -3,3 +3,9 @@
     color:#52796f;
     font-family: 'Courier New', Courier, monospace;
 }
+h1{
+    border: solid black 2px;
+    display: flex;
+    justify-content:center ;
+
+}
