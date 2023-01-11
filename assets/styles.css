@@ -7,4 +7,8 @@
 }
 .checkBoxes ul{
     display: inline;
+}*{
+    background-color: #354f25;
+    color:#52796f;
+    font-family: 'Courier New', Courier, monospace;
 }
