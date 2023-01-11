@@ -10,9 +10,6 @@
 .card{
     width: 22%;
 }
-.checkBoxes ul{
-    display: inline;
-}
 *{
     background-color: #354f25;
     color:#52796f;
