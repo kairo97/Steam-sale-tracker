@@ -7,17 +7,13 @@
     display: flex;
     justify-content: space-around;
 }
-.card{
+ .card{
     width: 22%;
-}
-.checkBoxes ul{
-    display: inline;
-}
-*{
-    background-color: #354f25;
-    color:#52796f;
-    font-family: 'Courier New', Courier, monospace;
-}
+} 
+ .checkBoxes ul{ 
+    display: inline; 
+ } 
+
 h1{
     padding:5px;
     display: flex;
