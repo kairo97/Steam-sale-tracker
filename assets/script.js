@@ -42,7 +42,7 @@ fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1593500', 
         let i=0;
 
         while (i<=10){
-            
+            var newsTracker = $
 
             console.log(completedata[i].title);
             i++;
