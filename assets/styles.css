@@ -16,3 +16,30 @@
 }
 
 
+
+h1{
+    padding:5px;
+    display: flex;
+    justify-content:center ;
+    background-color: darkslategrey;
+
+}
+#genres{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+    justify-content: space-between;
+}
+#gaming-news{
+    display:flex;
+    justify-content: center;
+    background-color: darkslategray;
+    bottom:0auto;
+} h3{
+    display:flex ;
+    flex-direction: row;
+    background-color: darkslategray;
+    margin-top: 0;
+
+}
