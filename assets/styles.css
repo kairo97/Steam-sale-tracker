@@ -11,28 +11,27 @@ body{
     justify-content: space-around;
 }
  .card{
-    min-width: 22%;
+    width: 200px;
     height: 300px;
 } 
-h1{
+
+
+#header{
     padding:5px;
+    padding-bottom: 15px;
     display: flex;
     justify-content:center ;
     background-color: darkslategrey;
 }
-#genres ul{
-    list-style: none;
+#genres {
     display: flex;
     flex-direction: row;
-    border: solid black;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
 }
-#gaming-news{
-    display:flex;
-    justify-content: center;
-    background-color: darkslategray;
-    bottom:0 auto;
-}
+
 #gaming-news{
     display:flex ;
     justify-content: center;
