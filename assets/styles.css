@@ -74,3 +74,6 @@ body{
     object-fit: contain;
     right:25px;
 }
+.hide {
+    display: none;
+}
