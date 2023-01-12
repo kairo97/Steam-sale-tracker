@@ -15,12 +15,8 @@ fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590', o
 		return data.json();
 	}).then((completedata)=>{
         console.log(completedata)
-	
-            console.log(completedata[0].title);
         
-            console.log(completedata[0].link);
-        
-        }
+	}
 
 ,)
 
