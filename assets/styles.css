@@ -32,7 +32,7 @@ body{
     justify-content:center ;
     background-color: darkslategrey;
 }
-#genres {
+#genres{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
