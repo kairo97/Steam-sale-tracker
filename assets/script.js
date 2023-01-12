@@ -1,11 +1,7 @@
-//jQuery selectors
-// var newsTitle = document.querySelector('#gaming-news')
 
-// var
-// var
 
 // Games Data API Connection
-
+//TODO: Fixed, uses as needed please.
 // const options = {
 // 	method: 'GET',
 // 	headers: {
@@ -15,17 +11,17 @@
 // };
 
 // fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1593500', options)
-	// .then((data) => {
-	// 	return data.json();
-	// }).then((completedata)=>{
-    //     console.log(completedata)
-    //     // let newsTitle = completedata[0].title})
+// 	.then((data) => {
+// 		return data.json();
+// 	}).then((completedata)=>{
+//         console.log(completedata)
 	
 
 
 
 
 	// Recent Gaming News API Connection
+
 	const optionZ = {
 		method: 'GET',
 		headers: {
@@ -33,23 +29,22 @@
 			'X-RapidAPI-Host': 'videogames-news2.p.rapidapi.com'
 		}
 	};
-	
+function searchNews(){
 	fetch('https://videogames-news2.p.rapidapi.com/videogames_news/recent', optionZ)
-	.then((data) => {
-		return data.json();
-	}).then((completedata)=>{
+		.then((data) => {
+			return data.json();
+		}).then((data)=>{
+			// console.log(data)
+		//	TODO:Display title and link on page
+			var recentNewsTitle = document.querySelector('news-title');
+			var createRecentNews = document.createElement('p');
 
 
-            console.log(completedata[i].title);
-            i++;
-            console.log(completedata[i].link);
-            i++;
-        }
+        	// console.log(data[0].title);
+			// console.log(data[0].link);	
+})}
 
-,)
-
-    
-
+searchNews();
 
 
 
