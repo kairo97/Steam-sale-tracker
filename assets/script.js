@@ -12,9 +12,23 @@ const options = {
 };
 
 fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590', options)
-.then((response) => response.json())
-.then((json) => displayResults(json))
-.catch((error) => console.error(`Error fetching data: ${error.message}`));
+	.then((data) => {
+		return data.json();
+	}).then((completedata)=>{
+        console.log(completedata)
+		for (var i = 0; i < completedata.length; i ++) {
+		var gameName = json.stringify(completedata.results[i]);
+		console.log(gameName)
+		}
+	
+            // console.log(completedata[0].title);
+        
+            // console.log(completedata[0].link);
+        }
+		,)
+		// console.log(completedata[0].children[3]);
+
+		
 		fetchsteam()
 	
 
