@@ -3,7 +3,9 @@
     color:#52796f;
     font-family: 'Courier New', Courier, monospace;
 }
-
+body{
+    background-color: #354f25;
+}
 .container{
     display: flex;
     justify-content: space-around;
@@ -30,9 +32,8 @@
     display: flex;
     justify-content:center ;
     background-color: darkslategrey;
-
 }
-#genres{
+#genres {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,9 +42,7 @@
     padding-bottom: 5px;
 }
 
-
-
- #gaming-news{
+#gaming-news{
     display:flex ;
     justify-content: center;
     background-color: darkslategray;
@@ -59,11 +58,19 @@
     margin-top: 0px;
     
 }
+.btn-nav{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.nes-btn{
+    background-color: #52796f;
+}
 #placeholder{
     min-height:300px;
     min-width:200px;
     position: relative;
     object-fit: contain;
-    right:25px
-
+    right:25px;
 }
