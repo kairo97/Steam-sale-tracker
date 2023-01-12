@@ -44,7 +44,7 @@ body{
 
 #gaming-news{
     display:flex ;
-    justify-content: center;
+    justify-content: space-between;
     background-color: darkslategray;
     position: absolute;
     bottom:0;
@@ -73,6 +73,9 @@ body{
     position: relative;
     object-fit: contain;
     right:25px;
+}
+#ign{
+
 }
 .hide {
     display: none;
