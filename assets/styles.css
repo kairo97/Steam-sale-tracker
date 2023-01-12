@@ -77,3 +77,32 @@ body{
 .hide {
     display: none;
 }
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    #placeholder{
+        min-height:300px;
+        min-width:200px;
+        position: relative;
+        object-fit: contain;
+    }
+  /* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    #placeholder{
+        min-height:250px;
+        min-width:150px;
+        position: relative;
+        object-fit: contain;
+    }
+  
+  /* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    #placeholder{
+        min: height 200px;
+        min-width:100px;
+        position: relative;
+        object-fit: contain;
+    }
+  }}}
