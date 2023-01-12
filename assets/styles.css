@@ -3,12 +3,14 @@
     color:#52796f;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .container{
     display: flex;
     justify-content: space-around;
 }
  .card{
-    width: 22%;
+    min-width: 22%;
+    height: 300px;
 } 
  .checkBoxes ul{ 
     display: inline; 
@@ -34,10 +36,21 @@ h1{
     background-color: darkslategray;
     bottom:0auto;
 }
- h3{
-    display:flex ;
-    flex-direction: row;
-    background-color: darkslategray;
-    margin-top: 0;
 
+
+ #gaming-news{
+    display:flex ;
+    justify-content: center;
+    background-color: darkslategray;
+    position: absolute;
+    bottom:0;
+    padding: 5px;
+    padding-top: 0px;
+    width: 100vw;
+    height: 75px;
+}
+#gaming-news h3{
+    background-color: darkslategray;
+    margin-top: 0px;
+    
 }
