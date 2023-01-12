@@ -8,9 +8,19 @@
     display: flex;
     justify-content: space-around;
 }
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border:solid black 2px;
+
+}
  .card{
     width: 200px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 } 
 
 
@@ -48,4 +58,12 @@
     background-color: darkslategray;
     margin-top: 0px;
     
+}
+#placeholder{
+    min-height:300px;
+    min-width:200px;
+    position: relative;
+    object-fit: contain;
+    right:25px
+
 }
