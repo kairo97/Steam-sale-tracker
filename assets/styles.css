@@ -10,9 +10,19 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border:solid black 2px;
+
+}
  .card{
     width: 200px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 } 
 
 
@@ -48,6 +58,7 @@ body{
     margin-top: 0px;
     
 }
+<<<<<<< HEAD
 .btn-nav{
     padding-top: 10px;
     display: flex;
@@ -56,4 +67,13 @@ body{
 }
 .nes-btn{
     background-color: #52796f;
+=======
+#placeholder{
+    min-height:300px;
+    min-width:200px;
+    position: relative;
+    object-fit: contain;
+    right:25px
+
+>>>>>>> dev
 }
