@@ -10,24 +10,11 @@ const options = {
 		'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
 	}
 };
-var fetchsteam = function (data) {
+
 fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590', options)
-	.then((data) => {
-		return data.json();
-	}).then((completedata)=>{
-        console.log(completedata)
-		for (var i = 0; i < completedata.length; i ++) {
-			console.log(completedata[i].children[3].title)
-		}
-	
-            // console.log(completedata[0].title);
-        
-            // console.log(completedata[0].link);
-        }
-		,)
-		// console.log(completedata[0].children[3]);
-	}
-		
+.then((response) => response.json())
+.then((json) => displayResults(json))
+.catch((error) => console.error(`Error fetching data: ${error.message}`));
 		fetchsteam()
 	
 
