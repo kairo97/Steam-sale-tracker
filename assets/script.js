@@ -17,7 +17,8 @@ fetch('https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590', o
 	}).then((completedata)=>{
         console.log(completedata)
 		for (var i = 0; i < completedata.length; i ++) {
-			console.log(completedata[i].children[3].title)
+		var gameName = json.stringify(completedata.results[i]);
+		console.log(gameName)
 		}
 	
             // console.log(completedata[0].title);
