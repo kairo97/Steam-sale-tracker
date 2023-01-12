@@ -9,33 +9,28 @@
     justify-content: space-around;
 }
  .card{
-    min-width: 22%;
+    width: 200px;
     height: 300px;
 } 
- .checkboxes ul{ 
-    display: inline; 
- } 
 
-h1{
+
+#header{
     padding:5px;
+    padding-bottom: 15px;
     display: flex;
     justify-content:center ;
     background-color: darkslategrey;
 
 }
 #genres{
-    list-style: none;
     display: flex;
     flex-direction: row;
-    border: solid black;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
 }
-#gaming-news{
-    display:flex;
-    justify-content: center;
-    background-color: darkslategray;
-    bottom:0auto;
-}
+
 
 
  #gaming-news{
