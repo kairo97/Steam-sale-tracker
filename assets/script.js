@@ -1,7 +1,7 @@
 //jQuery selectors
 
 // Games Data API Connection
-var game1 = document.querySelector("#game1");
+var game1 = document.querySelector('#game1');
 
 const options = {
   method: "GET",
