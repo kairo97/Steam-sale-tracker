@@ -42,18 +42,22 @@ body{
 
 #gaming-news{
     display:flex ;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: darkslategray;
+    margin-bottom: 0;
     position: absolute;
     bottom:0;
     padding: 5px;
     padding-top: 0px;
-    width: 100vw;
+    padding-bottom:10px;
+    width: 98vw;
     height: 75px;
 }
-#gaming-news h3{
+#gaming-news-header{
     background-color: darkslategray;
     margin-top: 0px;
+    order: 0;
+    padding-top: 0px;
     
 }
 .btn-nav{
@@ -72,8 +76,25 @@ body{
     /* object-fit: contain; */
     right:25px;
 }
-#ign{
+.footerimg{
+    height: 80px;
+    flex-direction: row;
+}
+#vaultboy{
+    order:-1;
+}
+#vaulthunter{
+    order:-2;
 
+}
+#link{
+    width: 80px;
+    object-fit: cover;
+    order:+2;
+}
+#bulba{
+    background-color: darkslategray;
+    order:+1;
 }
 .hide {
     display: none;
