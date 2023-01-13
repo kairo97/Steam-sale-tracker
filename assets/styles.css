@@ -36,7 +36,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    border:solid black 2px;
+    /* border:solid black 2px; */
 
 }
  .card{
@@ -123,13 +123,9 @@ body{
     background-color: darkslategray;
     order:+1;
 }
-.hide {
+/* .hide {
     display: none;
-}
-
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
-/* Tablets - header changes color */
+} */
 @media screen and (max-width: 992px) {
     #placeholder{
         min-height:300px;
@@ -156,7 +152,6 @@ body{
         display: none;
     }
 }
-  /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
     #placeholder{
         min-height:250px;
@@ -201,11 +196,9 @@ body{
         display: none;
     }
 } 
-  
-  /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
     #placeholder{
-        min-heigh: 200px;
+        min-height: 200px;
         min-width:100px;
         position: relative;
         object-fit: contain;
