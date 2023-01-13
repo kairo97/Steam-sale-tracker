@@ -15,6 +15,8 @@ body{
     display: flex;
     flex-direction: column;
     border:solid black 2px;
+ 
+
 
 }
  .card{
@@ -99,7 +101,7 @@ body{
     order:+1;
 }
 .hide {
-    display: none;
+    /* display: none; */
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
@@ -107,11 +109,16 @@ body{
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
     #placeholder{
-        min-height:300px;
-        min-width:200px;
+        height:300px;
+        width:200px;
         position: relative;
         object-fit: contain;
     }
+    card {
+        width: 400px;
+    }
+    }
+    
   /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
     #placeholder{
@@ -120,11 +127,13 @@ body{
         position: relative;
         object-fit: contain;
     }
-  
+    card {
+        width: 97%;
+    }
   /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
     #placeholder{
-        min: height 200px;
+        min-height:200px;
         min-width:100px;
         position: relative;
         object-fit: contain;
