@@ -131,6 +131,18 @@ body{
     .genre-card{
         width: 30%;
     }
+    .card3{
+        display: none;
+    }
+    #game3 {
+        display: none;
+    }
+    .card4{
+        display: none;
+    }
+    #game4 {
+        display: none;
+    }
 }
   /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
@@ -148,6 +160,36 @@ body{
     }
     #genres{
         flex-wrap: wrap;
+    }
+    .card1 {
+        width:55%;
+        min-width:220px;
+        align-content: center;
+        justify-content: center;
+}
+    #placeholder {
+        justify-content: center;
+        align-items: center;
+        left: 2px;
+    }
+    .card2 {
+        display: none;
+    }
+    #game2 {
+        display: none;
+    }
+    .card3 {
+        display: none;
+        
+    }
+    #game3 {
+        display: none;
+    }
+    .card4 {
+        display: none;
+    }
+    #game4 {
+        display: none;
     }
 } 
   /* Small smartphones - image placeholders change color */
