@@ -13,7 +13,7 @@ const options = {
 var fetchsteam = function (data) {
   console.log('hello')
   fetch(
-    'https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1',
+    'https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590',
     options,
   )
     .then((data) => {
@@ -35,7 +35,7 @@ var fetchsteam = function (data) {
 }
 // console.log(completedata[0].children[3]);
 
-fetchsteam()
+// fetchsteam()
 function printGame(completedata) {
   console.log(completedata)
   var gameCard = document.createElement('div')
@@ -54,20 +54,20 @@ function printGame(completedata) {
 }
 
 // Recent Gaming News API Connection
-/*const optionZ = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
-		'X-RapidAPI-Host': 'videogames-news2.p.rapidapi.com'
-	}
-};
+// const optionZ = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
+// 		'X-RapidAPI-Host': 'videogames-news2.p.rapidapi.com'
+// 	}
+// };
 
-fetch('https://videogames-news2.p.rapidapi.com/videogames_news/recent', optionZ)
-	.then((data) => {
-		return data.json();
-	}).then((completedata)=>{
-		console.log(completedata)
-}) */
+// fetch('https://videogames-news2.p.rapidapi.com/videogames_news/recent', optionZ)
+// 	.then((data) => {
+// 		return data.json();
+// 	}).then((completedata)=>{
+// 		console.log(completedata)
+// })
 
 // // Games List API Connection
 // const optionY = {

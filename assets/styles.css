@@ -47,7 +47,7 @@ body{
     justify-content: space-around;
     background-color: darkslategray;
     margin-bottom: 0;
-    position: absolute;
+    position: fixed;
     bottom:0;
     padding: 5px;
     padding-top: 0px;
