@@ -30,6 +30,7 @@ var fetchsteam = function (data) {
       //     console.log(gameName);
       // 	printGame(completedata[i]);
       //   }
+      
       printGame(completedata)
     })
 
