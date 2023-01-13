@@ -117,6 +117,10 @@ body{
     order:-2;
 
 }
+.foot div div{
+    background-color: darkslategray;
+
+}
 #link{
     width: 80px;
     object-fit: cover;
@@ -126,9 +130,9 @@ body{
     background-color: darkslategray;
     order:+1;
 }
-/* .hide {
+.hide {
     display: none;
-} */
+}
 @media screen and (max-width: 992px) {
     #placeholder{
         min-height:300px;
