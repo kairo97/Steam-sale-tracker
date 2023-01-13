@@ -35,7 +35,7 @@ var fetchsteam = function (data) {
 }
 // console.log(completedata[0].children[3]);
 
-fetchsteam()
+// fetchsteam()
 function printGame(completedata) {
   console.log(completedata)
   var gameCard = document.createElement('div')
