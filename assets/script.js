@@ -13,7 +13,7 @@ const options = {
 var fetchsteam = function (data) {
   console.log('hello')
   fetch(
-    'https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590',
+    'https://steam-special-offers.p.rapidapi.com/games_data/?app_id=1',
     options,
   )
     .then((data) => {
