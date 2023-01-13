@@ -8,15 +8,16 @@ body{
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .card-container{
     position: relative;
     display: flex;
     flex-direction: column;
-    border:solid black 2px;
- 
-
+    width: 20%;
+    align-items: center;
+    /* border:solid black 2px; */
 
 }
  .card{
@@ -43,13 +44,19 @@ body{
     padding-right: 15px;
     padding-bottom: 5px;
 }
+.genre-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
 
 #gaming-news{
     display:flex ;
     justify-content: space-around;
     background-color: darkslategray;
     margin-bottom: 0;
-    position: absolute;
+    position: fixed;
     bottom:0;
     padding: 5px;
     padding-top: 0px;
@@ -72,13 +79,14 @@ body{
 }
 .nes-btn{
     background-color: #52796f;
+    width: 10%;
 }
 #placeholder{
     min-height:300px;
     min-width:200px;
     position: relative;
     object-fit: contain;
-    right:25px;
+    right:28px;
 }
 .footerimg{
     height: 80px;
@@ -100,42 +108,54 @@ body{
     background-color: darkslategray;
     order:+1;
 }
-.hide {
-    /* display: none; */
-}
+/* .hide {
+    display: none;
+} */
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-    #placeholder{
-        height:300px;
-        width:200px;
+    /* #placeholder{
+        min-height:300px;
+        min-width:200px;
         position: relative;
         object-fit: contain;
+    } */
+    .card-container{
+        width: 45%;
     }
-    card {
-        width: 400px;
+    .nes-btn{
+        width: 15%;
     }
+    .genre-card{
+        width: 30%;
     }
-    
+}
   /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
-    #placeholder{
+    /* #placeholder{
         min-height:250px;
         min-width:150px;
         position: relative;
         object-fit: contain;
+    } */
+    .card-container{
+        width: 100%;
     }
-    card {
-        width: 97%;
+    .nes-btn{
+        width: 25%;
     }
+    #genres{
+        flex-wrap: wrap;
+    }
+} 
   /* Small smartphones - image placeholders change color */
-@media screen and (max-width: 576px) {
-    #placeholder{
-        min-height:200px;
+/* @media screen and (max-width: 576px) {
+    /* #placeholder{
+        min-height: 200px;
         min-width:100px;
         position: relative;
         object-fit: contain;
     }
-  }}}
+  } */
