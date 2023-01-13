@@ -1,7 +1,7 @@
 //jQuery selectors
 
 // Games Data API Connection
-var game1 = document.querySelector('#game1');
+/*var game1 = document.querySelector('#game1');
 
 const options = {
   method: 'GET',
@@ -60,11 +60,11 @@ function printGame(completedata) {
   linkButtonEl.setAttribute('href', completedata.url)
 
   resultBody.append(titleEl, bodyText, linkButtonEl)
-  game1.append(gameCard)
-}
+  game1.append(gameCard) 
+} */
 
 // Recent Gaming News API Connection
-/* const optionZ = {
+ const optionZ = {
 	method: 'GET',
  	headers: {
  		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
@@ -78,7 +78,7 @@ function printGame(completedata) {
  	}).then((completedata)=>{
  		console.log(completedata)
     printNews(completedata);
- }) */
+ }) 
 
 //  Games List API Connection
 //  const optionY = {
@@ -88,24 +88,24 @@ function printGame(completedata) {
  		// 'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
  	// }
 //  };
-
+console.loc('hello')
 //  fetch('https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=4&region=IN', optionY)
  	// .then(response => response.json())
  	// .then(response => console.log(response))
  	// .catch(err => console.error(err));
-
-  /*function printNews(completedata) {
+var footer = document.querySelector('#gaming-news')
+  function printNews(completedata) {
     console.log(completedata)
     var newsCard = document.createElement('div')
     var resultBody = document.createElement('div')
     newsCard.append(resultBody)
     var titleEl = document.createElement('h4')
-    titleEl.textContent = completedata.title
+    titleEl.textContent = completedata[0].title
     var bodyText = document.createElement('img')
-    bodyText.textContent = completedata.img
+    bodyText.textContent = completedata[0].img
     var linkButtonEl = document.createElement('a')
     linkButtonEl.textContent = 'Read story'
     linkButtonEl.setAttribute('href', completedata[0].link)
   
     resultBody.append(titleEl, bodyText, linkButtonEl)
-    game1.append(newsCard)} */
+    footer.append(newsCard)} 
