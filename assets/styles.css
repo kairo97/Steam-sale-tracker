@@ -2,10 +2,30 @@
     background-color: #354f25;
     color:#52796f;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
 }
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+}
+.headerlogo{
+    height: 60px;
+    position: absolute;
+    left: 30px;
+    background-color: transparent;
+    padding-bottom: 10px;
+
+}
+
 body{
     background-color: #354f25;
 }
+
+
 .container{
     display: flex;
     justify-content: space-around;
@@ -31,8 +51,11 @@ body{
     padding-bottom: 15px;
     display: flex;
     justify-content:center ;
+    width: 100vw;
+    text-align: center;
     background-color: darkslategrey;
 }
+
 #genres {
     display: flex;
     flex-direction: row;
