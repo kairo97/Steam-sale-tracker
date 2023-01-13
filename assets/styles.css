@@ -2,7 +2,6 @@
     background-color: #354f25;
     color:#52796f;
     font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
 }
 body{
     background-color: #354f25;
@@ -15,15 +14,18 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* border:solid black 2px; */
+    border:solid black 2px;
+
 }
-.card{
+ .card{
     width: 200px;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 } 
+
+
 #header{
     padding:5px;
     padding-bottom: 15px;
@@ -31,7 +33,7 @@ body{
     justify-content:center ;
     background-color: darkslategrey;
 }
-#genres{
+#genres {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -70,10 +72,10 @@ body{
     background-color: #52796f;
 }
 #placeholder{
-    min-height:295px;
-    min-width:195px;
+    min-height:300px;
+    min-width:200px;
     position: relative;
-    /* object-fit: contain; */
+    object-fit: contain;
     right:25px;
 }
 .footerimg{
@@ -99,6 +101,32 @@ body{
 .hide {
     display: none;
 }
-.nes-bulbasaur{
-    background-color: darkslategray;
-}
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    #placeholder{
+        min-height:300px;
+        min-width:200px;
+        position: relative;
+        object-fit: contain;
+    }
+  /* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    #placeholder{
+        min-height:250px;
+        min-width:150px;
+        position: relative;
+        object-fit: contain;
+    }
+  
+  /* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    #placeholder{
+        min-height: 200px;
+        min-width:100px;
+        position: relative;
+        object-fit: contain;
+    }
+  }}}
