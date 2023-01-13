@@ -124,7 +124,7 @@ body{
     order:+1;
 }
 .hide {
-    display: none;
+    /* display: none; */
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
