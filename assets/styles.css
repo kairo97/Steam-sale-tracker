@@ -70,7 +70,7 @@ body{
     padding-bottom: 5px;
 }
 
-#gaming-news{
+#icons{
     display:flex ;
     justify-content: space-around;
     background-color: darkslategray;
@@ -84,6 +84,8 @@ body{
     height: 75px;
 }
 #gaming-news-header{
+    display:flex;
+    justify-content: center;
     background-color: darkslategray;
     margin-top: 0px;
     order: 0;
