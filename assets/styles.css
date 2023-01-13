@@ -33,6 +33,7 @@ body{
     justify-content:center ;
     background-color: darkslategrey;
 }
+
 #genres {
     display: flex;
     flex-direction: row;
