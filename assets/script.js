@@ -1,7 +1,7 @@
 //jQuery selectors
 
 // Games Data API Connection
-/*var game1 = document.querySelector('#game1');
+var game1 = document.querySelector('#game1');
 
 const options = {
   method: 'GET',
@@ -14,7 +14,7 @@ const options = {
   // return Math.floor(Math.random()*max);
 // }
 
-var steamOffers = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590"
+var steamOffers = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=12210"
 // +(getRandomNumber(1000)+1);
 var fetchsteam = function (data) {
   
@@ -61,7 +61,7 @@ function printGame(completedata) {
 
   resultBody.append(titleEl, bodyText, linkButtonEl)
   game1.append(gameCard) 
-} */
+} 
 
 // Recent Gaming News API Connection
  const optionZ = {
@@ -88,7 +88,7 @@ function printGame(completedata) {
  		// 'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
  	// }
 //  };
-console.loc('hello')
+console.log('hello')
 //  fetch('https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=4&region=IN', optionY)
  	// .then(response => response.json())
  	// .then(response => console.log(response))
