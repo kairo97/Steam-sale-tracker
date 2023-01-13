@@ -2,6 +2,7 @@
     background-color: #354f25;
     color:#52796f;
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 body{
     background-color: #354f25;
@@ -14,17 +15,15 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    border:solid black 2px;
+    /* border:solid black 2px; */
 }
- .card{
+.card{
     width: 200px;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 } 
-
-
 #header{
     padding:5px;
     padding-bottom: 15px;
@@ -67,10 +66,10 @@ body{
     background-color: #52796f;
 }
 #placeholder{
-    min-height:300px;
-    min-width:200px;
+    min-height:295px;
+    min-width:195px;
     position: relative;
-    object-fit: contain;
+    /* object-fit: contain; */
     right:25px;
 }
 #ign{
@@ -78,4 +77,7 @@ body{
 }
 .hide {
     display: none;
+}
+.nes-bulbasaur{
+    background-color: darkslategray;
 }
