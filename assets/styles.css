@@ -6,18 +6,19 @@
     padding: 0;
 }
 
-.headerlogo{
-    height: 60px;
-    position: absolute;
-    left: 20px;
-    background-color: transparent;
-
-}
-
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2px;
+}
+.headerlogo{
+    height: 60px;
+    position: absolute;
+    left: 30px;
+    background-color: transparent;
+    padding-bottom: 10px;
+
 }
 
 body{
