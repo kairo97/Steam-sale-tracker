@@ -11,9 +11,11 @@ const options = {
   },
 }
 var fetchsteam = function (data) {
-  console.log('hello')
+  var randomNumber = (Math.random()+1)*2000;
+  var steamOffers = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id="+randomNumber;
+  console.log(steamOffers)
   fetch(
-    'https://steam-special-offers.p.rapidapi.com/games_data/?app_id=271590',
+    steamOffers,
     options,
   )
     .then((data) => {
@@ -35,7 +37,7 @@ var fetchsteam = function (data) {
 }
 // console.log(completedata[0].children[3]);
 
-// fetchsteam()
+ fetchsteam()
 function printGame(completedata) {
   console.log(completedata)
   var gameCard = document.createElement('div')
