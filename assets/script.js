@@ -32,17 +32,18 @@ var fetchsteam = function (data) {
     //     console.log(gameName);
 	// 	printGame(completedata[i]);
     //   }
-    getTitle(completedata);
+   // getTitle(completedata);
 	  printGame(completedata);
-    });
+    }); 
 
-  // console.log(completedata[0].title);
+   } // console.log(completedata[0].title);
 
   // console.log(completedata[0].link);
-}
+// }
 // console.log(completedata[0].children[3]);
 
 //  function getTitle(completedata){
+  fetchsteam()
   // do{ fetchsteam()} while (completedata.title === null);}
 
 function printGame(completedata) {
@@ -63,31 +64,48 @@ function printGame(completedata) {
 }
 
 // Recent Gaming News API Connection
-// const optionZ = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
-// 		'X-RapidAPI-Host': 'videogames-news2.p.rapidapi.com'
-// 	}
-// };
+/* const optionZ = {
+	method: 'GET',
+ 	headers: {
+ 		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
+		'X-RapidAPI-Host': 'videogames-news2.p.rapidapi.com'
+ 	}
+ };
 
-// fetch('https://videogames-news2.p.rapidapi.com/videogames_news/recent', optionZ)
-// 	.then((data) => {
-// 		return data.json();
-// 	}).then((completedata)=>{
-// 		console.log(completedata)
-// })
+ fetch('https://videogames-news2.p.rapidapi.com/videogames_news/recent', optionZ)
+ 	.then((data) => {
+ 		return data.json();
+ 	}).then((completedata)=>{
+ 		console.log(completedata)
+    printNews(completedata);
+ }) */
 
-// // Games List API Connection
-// const optionY = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
-// 		'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
-// 	}
-// };
+//  Games List API Connection
+//  const optionY = {
+ 	// method: 'GET',
+ 	// headers: {
+ 		// 'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
+ 		// 'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
+ 	// }
+//  };
 
-// fetch('https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=10&region=IN', optionY)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
+//  fetch('https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=4&region=IN', optionY)
+ 	// .then(response => response.json())
+ 	// .then(response => console.log(response))
+ 	// .catch(err => console.error(err));
+
+  /*function printNews(completedata) {
+    console.log(completedata)
+    var newsCard = document.createElement('div')
+    var resultBody = document.createElement('div')
+    newsCard.append(resultBody)
+    var titleEl = document.createElement('h4')
+    titleEl.textContent = completedata.title
+    var bodyText = document.createElement('img')
+    bodyText.textContent = completedata.img
+    var linkButtonEl = document.createElement('a')
+    linkButtonEl.textContent = 'Read story'
+    linkButtonEl.setAttribute('href', completedata[0].link)
+  
+    resultBody.append(titleEl, bodyText, linkButtonEl)
+    game1.append(newsCard)} */
