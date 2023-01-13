@@ -34,12 +34,15 @@ body{
 
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
 }
 .card-container{
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 25px;
     /* border:solid black 2px; */
 
 }
@@ -71,7 +74,7 @@ body{
     padding-bottom: 5px;
 }
 
-#gaming-news{
+#icons{
     display:flex ;
     justify-content: space-around;
     background-color: darkslategray;
@@ -85,6 +88,8 @@ body{
     height: 75px;
 }
 #gaming-news-header{
+    display:flex;
+    justify-content: center;
     background-color: darkslategray;
     margin-top: 0px;
     order: 0;
@@ -118,6 +123,10 @@ body{
     order:-2;
 
 }
+.foot div div{
+    background-color: darkslategray;
+
+}
 #link{
     width: 80px;
     object-fit: cover;
@@ -127,9 +136,9 @@ body{
     background-color: darkslategray;
     order:+1;
 }
-/* .hide {
+.hide {
     display: none;
-} */
+}
 @media screen and (max-width: 992px) {
     #placeholder{
         min-height:300px;

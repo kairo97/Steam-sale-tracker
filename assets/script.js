@@ -41,9 +41,11 @@ var fetchsteam = function (data) {
   // console.log(completedata[0].link);
 // }
 // console.log(completedata[0].children[3]);
+fetchsteam();
+/*function getTitle(completedata){
+  do{ fetchsteam()} while (completedata.title === null);}*/
 
 //  function getTitle(completedata){
-  fetchsteam()
   // do{ fetchsteam()} while (completedata.title === null);}
 
 function printGame(completedata) {
