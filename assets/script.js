@@ -46,7 +46,6 @@ fetchsteam();
   do{ fetchsteam()} while (completedata.title === null);}*/
 
 //  function getTitle(completedata){
-  fetchsteam()
   // do{ fetchsteam()} while (completedata.title === null);}
 
 function printGame(completedata) {
