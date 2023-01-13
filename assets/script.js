@@ -24,15 +24,14 @@ var fetchsteam = function (data) {
       return data.json()
     })
     .then((completedata) => {
-      console.log(completedata)
-      //   for (var i = 0; i < completedata.length; i++) {
-      //     var gameName = json.stringify(completedata.results[i]);
-      //     console.log(gameName);
-      // 	printGame(completedata[i]);
-      //   }
-      
-      printGame(completedata)
-    })
+		console.log(completedata);
+    //   for (var i = 0; i < completedata.length; i++) {
+    //     var gameName = json.stringify(completedata.results[i]);
+    //     console.log(gameName);
+	// 	printGame(completedata[i]);
+    //   }
+	  printGame(completedata)
+    });
 
   // console.log(completedata[0].title);
 
