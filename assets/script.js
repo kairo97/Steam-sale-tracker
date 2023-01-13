@@ -10,10 +10,12 @@ const options = {
     'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com',
   },
 }
+function getRandomNumber(max){
+  return Math.floor(Math.random()*max);
+}
+
+var steamOffers = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id="+(getRandomNumber(2000)+1);
 var fetchsteam = function (data) {
-  var randomNumber = (Math.random()+1)*2000;
-  var steamOffers = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id="+randomNumber;
-  console.log(steamOffers)
   fetch(
     steamOffers,
     options,
@@ -37,7 +39,7 @@ var fetchsteam = function (data) {
 }
 // console.log(completedata[0].children[3]);
 
- fetchsteam()
+  fetchsteam()
 function printGame(completedata) {
   console.log(completedata)
   var gameCard = document.createElement('div')
