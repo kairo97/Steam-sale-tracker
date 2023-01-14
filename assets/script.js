@@ -2,7 +2,10 @@
 
 // Games Data API Connection
 var game1 = document.querySelector('#game1');
-
+var gameCard1 = document.querySelector('#placeholder1');
+var gameCard2 = document.querySelector('#placeholder2');
+var gameCard3 = document.querySelector('#placeholder3');
+var gameCard4 = document.querySelector('#placeholder4');
 const options = {
   method: 'GET',
   headers: {
@@ -16,7 +19,14 @@ const options = {
 var startBtn = document.querySelector('#get-games');
 
 startBtn.addEventListener('click', function(){
-  fetchsteam(), fetchNews()
+  fetchsteam();
+   fetchNews();
+   game1.classList.remove('hide');
+   startBtn.classList.add('hide');
+   gameCard1.classList.remove('hide');
+   gameCard2.classList.remove('hide');
+   gameCard3.classList.remove('hide');
+   gameCard4.classList.remove('hide');
 });
 
 var steamOffers = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=12210"
@@ -32,21 +42,10 @@ var fetchsteam = function (data) {
     })
     .then((completedata) => {
 		console.log(completedata);
-    //   for (var i = 0; i < completedata.length; i++) {
-    //     var gameName = json.stringify(completedata.results[i]);
-    //     console.log(gameName);
-	// 	printGame(completedata[i]);
-    //   }
-   // getTitle(completedata);
 	  printGame(completedata);
     }); 
 
-   } // console.log(completedata[0].title);
-
-  // console.log(completedata[0].link);
-// }
-// console.log(completedata[0].children[3]);
-// fetchsteam();
+   } 
 /*function getTitle(completedata){
   do{ fetchsteam()} while (completedata.title === null);}*/
 
@@ -86,7 +85,6 @@ function fetchNews(){
  		console.log(completedata)
     printNews(completedata);
  }) }
-  // fetchNews()
 
 //  Games List API Connection
 //  const optionY = {
@@ -96,7 +94,6 @@ function fetchNews(){
  		// 'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
  	// }
 //  };
-console.log('hello')
 //  fetch('https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=4&region=IN', optionY)
  	// .then(response => response.json())
  	// .then(response => console.log(response))
