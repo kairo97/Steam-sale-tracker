@@ -82,6 +82,12 @@ body{
     justify-content: center;
 
 }
+#controllers{
+    height: 200px;
+    width:600px;
+    position: relative;
+    left: 50px;
+}
 #get-games{
     background-color: purple;
     border-radius: 5px;
