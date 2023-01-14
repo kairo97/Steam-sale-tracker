@@ -13,6 +13,11 @@ const options = {
 // function getRandomNumber(max){
   // return Math.floor(Math.random()*max);
 // }
+var startBtn = document.querySelector('#get-games');
+
+startBtn.addEventListener('click', function(){
+  fetchsteam(), fetchNews()
+});
 
 var steamOffers = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=12210"
 // +(getRandomNumber(1000)+1);
@@ -98,7 +103,6 @@ console.log('hello')
  	// .catch(err => console.error(err));
 var footer = document.querySelector('#gaming-news-header')
   function printNews(completedata) {
-    console.log(completedata)
     var newsCard = document.createElement('div')
     var resultBody = document.createElement('div')
     newsCard.append(resultBody)
