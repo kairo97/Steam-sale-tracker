@@ -73,6 +73,17 @@ body{
     padding-right: 15px;
     padding-bottom: 5px;
 }
+#get-game-container{
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#get-games{
+    background-color: purple;
+    border-radius: 5px;
+}
 
 #icons{
     display:flex ;
