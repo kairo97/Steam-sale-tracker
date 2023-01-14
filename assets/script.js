@@ -81,7 +81,7 @@ function fetchNews(){
  		console.log(completedata)
     printNews(completedata);
  }) }
-  fetchNews()
+  // fetchNews()
 
 //  Games List API Connection
 //  const optionY = {
@@ -111,4 +111,5 @@ var footer = document.querySelector('#gaming-news-header')
     linkButtonEl.setAttribute('href', completedata[0].link)
   
     resultBody.append(titleEl, bodyText, linkButtonEl)
-    footer.append(newsCard)} 
+    footer.append(newsCard);
+  } 
