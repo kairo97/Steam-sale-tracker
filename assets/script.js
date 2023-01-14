@@ -41,7 +41,7 @@ var fetchsteam = function (data) {
   // console.log(completedata[0].link);
 // }
 // console.log(completedata[0].children[3]);
-fetchsteam();
+// fetchsteam();
 /*function getTitle(completedata){
   do{ fetchsteam()} while (completedata.title === null);}*/
 
@@ -73,14 +73,15 @@ function printGame(completedata) {
 		'X-RapidAPI-Host': 'videogames-news2.p.rapidapi.com'
  	}
  };
-
+function fetchNews(){
  fetch('https://videogames-news2.p.rapidapi.com/videogames_news/recent', optionZ)
  	.then((data) => {
  		return data.json();
  	}).then((completedata)=>{
  		console.log(completedata)
     printNews(completedata);
- }) 
+ }) }
+  fetchNews()
 
 //  Games List API Connection
 //  const optionY = {
@@ -95,7 +96,7 @@ console.log('hello')
  	// .then(response => response.json())
  	// .then(response => console.log(response))
  	// .catch(err => console.error(err));
-var footer = document.querySelector('#gaming-news')
+var footer = document.querySelector('#gaming-news-header')
   function printNews(completedata) {
     console.log(completedata)
     var newsCard = document.createElement('div')

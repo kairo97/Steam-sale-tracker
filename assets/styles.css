@@ -87,13 +87,19 @@ body{
     width: 98vw;
     height: 75px;
 }
+#gaming-news{
+    background-color: darkslategray;
+}
 #gaming-news-header{
     display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: darkslategray;
     margin-top: 0px;
     order: 0;
     padding-top: 0px;
+    padding-bottom: 100px;
     
 }
 .btn-nav{
