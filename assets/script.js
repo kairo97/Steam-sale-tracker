@@ -38,6 +38,7 @@ var steamList =
     .then(response => 
       response.json()
       )
+      // may be missing something in for loop here
       .then(data => {
         var json2string = JSON.stringify(data.games_list);
         var gameList = json2string.split()
