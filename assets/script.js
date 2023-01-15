@@ -98,6 +98,7 @@ function fetchNews() {
 // }
 //  };
 //  fetch('https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=4&region=IN', optionY)
+
 // .then(response => response.json())
 // .then(response => console.log(response))
 // .catch(err => console.error(err));
