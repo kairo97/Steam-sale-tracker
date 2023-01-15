@@ -3,10 +3,10 @@
 // Games Data API Connection
 var game1 = document.querySelector("#game1");
 var controllers = document.querySelector('#controllers')
-var gameCard1 = document.querySelector("#placeholder1");
-var gameCard2 = document.querySelector("#placeholder2");
-var gameCard3 = document.querySelector("#placeholder3");
-var gameCard4 = document.querySelector("#placeholder4");
+var card1 = document.querySelector("#placeholder1");
+var card2 = document.querySelector("#placeholder2");
+var card3 = document.querySelector("#placeholder3");
+var card4 = document.querySelector("#placeholder4");
 const options = {
   method: "GET",
   headers: {
@@ -21,34 +21,57 @@ var startBtn = document.querySelector("#get-games");
 
 startBtn.addEventListener("click", function () {
   fetchsteam();
-  fetchNews();
+  // fetchNews();
   startBtn.classList.add("hide");
   controllers.classList.add("hide");
   game1.classList.remove("hide");
-  gameCard1.classList.remove("hide");
-  gameCard2.classList.remove("hide");
-  gameCard3.classList.remove("hide");
-  gameCard4.classList.remove("hide");
+  card1.classList.remove("hide");
+  card2.classList.remove("hide");
+  card3.classList.remove("hide");
+  card4.classList.remove("hide");
 });
 
-var steamOffers =
+var steamList =
   "https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=100&region=US";
-var fetchsteam = function (data) {
-  fetch(steamOffers, options)
-    .then((data) => {
-      return data.json();
-    })
-    .then((completedata) => {
-      console.log(completedata);
+  var fetchsteam = function (response) {
+    fetch(steamList, options)
+    .then(response => 
+      response.json()
+      )
+      // may be missing something in for loop here
+      .then(data => {
+        var json2string = JSON.stringify(data.games_list);
+        var gameList = json2string.split()
+        console.log(gameList);
+        for (var i = 0; i < gameList.length; i ++) {
+          var randomGame = gameList[i]
+       var gameId = "https://steam-special-offers.p.rapidapi.com/games_list/?" + randomGame;
+      var fetchGame = function(data) {
+        fetch(gameId, options)
+        .then(data => data.json()
+        .then(completedata => console.log(completedata)))
+        printGame();
+      }
+    
+     }
+  })
+    }
+    // )
+// }
+    
+      
+    // var fetchGame = function(data) {
+    //   fetch(gameId, options)
+    //   .then(data => data.json()
+    //   .then(completedata => console.log(completedata)))
+    //   printGame();
+    // }
 
-      printGame(completedata);
-    });
-};
+// function getGames(completedata){
+//   for (var i = 0; i < completedata.length; i++){
 
-/*function getTitle(completedata){
-  do{ fetchsteam()} while (completedata.title === null);}*/
-//  function getTitle(completedata){
-// do{ fetchsteam()} while (completedata.title === null);}
+//   }
+// }
 
 function printGame(completedata) {
   console.log(completedata);
