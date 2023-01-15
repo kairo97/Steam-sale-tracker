@@ -1,4 +1,4 @@
-//jQuery selectors
+// jQuery selectors
 
 // Games Data API Connection
 var game1 = document.querySelector("#game1");
@@ -41,12 +41,12 @@ var fetchsteam = function (data) {
     .then((completedata) => {
       console.log(completedata);
 
-      // printGame(completedata);
+      printGame(completedata);
     });
 };
+
 /*function getTitle(completedata){
   do{ fetchsteam()} while (completedata.title === null);}*/
-
 //  function getTitle(completedata){
 // do{ fetchsteam()} while (completedata.title === null);}
 
