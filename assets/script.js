@@ -3,10 +3,10 @@
 // Games Data API Connection
 var game1 = document.querySelector("#game1");
 var controllers = document.querySelector('#controllers')
-var gameCard1 = document.querySelector("#placeholder1");
-var gameCard2 = document.querySelector("#placeholder2");
-var gameCard3 = document.querySelector("#placeholder3");
-var gameCard4 = document.querySelector("#placeholder4");
+var card1 = document.querySelector("#placeholder1");
+var card2 = document.querySelector("#placeholder2");
+var card3 = document.querySelector("#placeholder3");
+var card4 = document.querySelector("#placeholder4");
 const options = {
   method: "GET",
   headers: {
@@ -21,47 +21,43 @@ var startBtn = document.querySelector("#get-games");
 
 startBtn.addEventListener("click", function () {
   fetchsteam();
-  fetchNews();
+  // fetchNews();
   startBtn.classList.add("hide");
   controllers.classList.add("hide");
   game1.classList.remove("hide");
-  gameCard1.classList.remove("hide");
-  gameCard2.classList.remove("hide");
-  gameCard3.classList.remove("hide");
-  gameCard4.classList.remove("hide");
+  card1.classList.remove("hide");
+  card2.classList.remove("hide");
+  card3.classList.remove("hide");
+  card4.classList.remove("hide");
 });
 
-var steamOffers =
-  "https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=100&region=US";
-var fetchsteam = function (data) {
-  fetch(steamOffers, options)
-    .then((data) => {
-      return data.json();
-    })
-    .then((completedata) => {
-      console.log(completedata);
-
-      // printGame(completedata);
-    });
+var steamList =
+  "https://steam-special-offers.p.rapidapi.com/games_list/?app_id=2221490&1551360&1919590&648800";
+var fetchsteam = function (response) {
+  fetch(steamList, options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
+    
 };
-/*function getTitle(completedata){
-  do{ fetchsteam()} while (completedata.title === null);}*/
+// function getGames(completedata){
+//   for (var i = 0; i < completedata.length; i++){
 
-//  function getTitle(completedata){
-// do{ fetchsteam()} while (completedata.title === null);}
+//   }
+// }
 
-function printGame(completedata) {
-  console.log(completedata);
+function printGame(err) {
+  console.log(err);
   var gameCard = document.createElement("div");
   var resultBody = document.createElement("div");
   gameCard.append(resultBody);
   var titleEl = document.createElement("h3");
-  titleEl.textContent = completedata.title;
+  titleEl.textContent = err[0].title;
   var bodyText = document.createElement("p");
-  bodyText.textContent = completedata.price;
+  bodyText.textContent = err[0].price;
   var linkButtonEl = document.createElement("a");
   linkButtonEl.textContent = "Go to game";
-  linkButtonEl.setAttribute("href", completedata.url);
+  linkButtonEl.setAttribute("href", err[0].url);
 
   resultBody.append(titleEl, bodyText, linkButtonEl);
   game1.append(gameCard);
