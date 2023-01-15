@@ -20,8 +20,8 @@ const options = {
 var startBtn = document.querySelector("#get-games");
 
 startBtn.addEventListener("click", function () {
-  fetchsteam();
-  fetchNews();
+  // fetchsteam();
+  // fetchNews();
   startBtn.classList.add("hide");
   controllers.classList.add("hide");
   game1.classList.remove("hide");
@@ -29,7 +29,35 @@ startBtn.addEventListener("click", function () {
   gameCard2.classList.remove("hide");
   gameCard3.classList.remove("hide");
   gameCard4.classList.remove("hide");
-});
+
+  var addCoins = document.createElement('i');
+  addCoins.classList.add('nes-icon', 'coin', 'is-large');
+  var coins = document.getElementById('get-game-container');
+  coins.appendChild(addCoins);
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+
+  });
 
 var steamOffers =
   "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=12210";
