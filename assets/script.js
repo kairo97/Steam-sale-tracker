@@ -32,8 +32,7 @@ startBtn.addEventListener("click", function () {
 });
 
 var steamOffers =
-  "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=12210";
-// +(getRandomNumber(1000)+1);
+  "https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=100&region=US";
 var fetchsteam = function (data) {
   fetch(steamOffers, options)
     .then((data) => {
@@ -41,7 +40,8 @@ var fetchsteam = function (data) {
     })
     .then((completedata) => {
       console.log(completedata);
-      printGame(completedata);
+
+      // printGame(completedata);
     });
 };
 /*function getTitle(completedata){
