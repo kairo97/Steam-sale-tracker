@@ -32,32 +32,49 @@ startBtn.addEventListener("click", function () {
 });
 
 var steamList =
-  "https://steam-special-offers.p.rapidapi.com/games_list/?app_id=2221490&1551360&1919590&648800";
-var fetchsteam = function (response) {
+  "https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=100&region=US";
+// trying to turn the object returned from fetch into array to be able to loop over it and place into following fetch 
+// running into errors trying to parse data
+  var gameId = "https://steam-special-offers.p.rapidapi.com/games_list/?"
+var fetchsteam = function (getdata) {
   fetch(steamList, options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+    .then(result => result.json())
+    // Running into error right here unexpected token "d"
+    // .then(data => JSON.parse("data", data))
+    // .then(completedata => {
+    //   for (var i = 0; i < completedata.length; i++){
+    //     console.log(completedata[i])
+    //   }
+    }
+    // )
+// }
     
-};
+      
+    // var fetchGame = function(data) {
+    //   fetch(gameId, options)
+    //   .then(data => data.json()
+    //   .then(completedata => console.log(completedata)))
+    //   printGame();
+    // }
+
 // function getGames(completedata){
 //   for (var i = 0; i < completedata.length; i++){
 
 //   }
 // }
 
-function printGame(err) {
-  console.log(err);
+function printGame(completedata) {
+  console.log(completedata);
   var gameCard = document.createElement("div");
   var resultBody = document.createElement("div");
   gameCard.append(resultBody);
   var titleEl = document.createElement("h3");
-  titleEl.textContent = err[0].title;
+  titleEl.textContent = completedata.title;
   var bodyText = document.createElement("p");
-  bodyText.textContent = err[0].price;
+  bodyText.textContent = completedata.price;
   var linkButtonEl = document.createElement("a");
   linkButtonEl.textContent = "Go to game";
-  linkButtonEl.setAttribute("href", err[0].url);
+  linkButtonEl.setAttribute("href", completedata.url);
 
   resultBody.append(titleEl, bodyText, linkButtonEl);
   game1.append(gameCard);
