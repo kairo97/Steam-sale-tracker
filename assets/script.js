@@ -1,4 +1,4 @@
-//jQuery selectors
+// jQuery selectors
 
 // Games Data API Connection
 var game1 = document.querySelector("#game1");
