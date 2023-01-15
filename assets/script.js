@@ -33,18 +33,27 @@ startBtn.addEventListener("click", function () {
 
 var steamList =
   "https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=100&region=US";
-// trying to turn the object returned from fetch into array to be able to loop over it and place into following fetch 
-// running into errors trying to parse data
-  var gameId = "https://steam-special-offers.p.rapidapi.com/games_list/?"
-var fetchsteam = function (getdata) {
-  fetch(steamList, options)
-    .then(result => result.json())
-    // Running into error right here unexpected token "d"
-    // .then(data => JSON.parse("data", data))
-    // .then(completedata => {
-    //   for (var i = 0; i < completedata.length; i++){
-    //     console.log(completedata[i])
-    //   }
+  var fetchsteam = function (response) {
+    fetch(steamList, options)
+    .then(response => 
+      response.json()
+      )
+      .then(data => {
+        var json2string = JSON.stringify(data.games_list);
+        var gameList = json2string.split()
+        console.log(gameList);
+        for (var i = 0; i < gameList.length; i ++) {
+          var randomGame = gameList[i]
+       var gameId = "https://steam-special-offers.p.rapidapi.com/games_list/?" + randomGame;
+      var fetchGame = function(data) {
+        fetch(gameId, options)
+        .then(data => data.json()
+        .then(completedata => console.log(completedata)))
+        printGame();
+      }
+    
+     }
+  })
     }
     // )
 // }
