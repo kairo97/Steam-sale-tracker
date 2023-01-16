@@ -251,11 +251,13 @@ function printGame(data) {
   titleEl.textContent = data.title;
   var bodyText = document.createElement("p");
   bodyText.textContent = data.price;
+  var origPrice = document.createElement('p');
+  origPrice.textContent = data.original_price;
   var linkButtonEl = document.createElement("a");
   linkButtonEl.textContent = "Go to game";
   linkButtonEl.setAttribute("href", data.url);
 
-  resultBody.append(titleEl, bodyText, linkButtonEl);
+  resultBody.append(titleEl, bodyText, linkButtonEl, origPrice);
   game1.append(gameCard);
 }
 
