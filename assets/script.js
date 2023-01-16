@@ -42,20 +42,20 @@ var steamList =
       .then(data => {
         var json2string = JSON.stringify(data.games_list);
         var gameList = json2string.split()
-        console.log(gameList);
-        for (var i = 0; i < gameList.length; i ++) {
-          var randomGame = gameList[i]
-       var gameId = "https://steam-special-offers.p.rapidapi.com/games_list/?" + randomGame;
-      var fetchGame = function(data) {
-        fetch(gameId, options)
-        .then(data => data.json()
-        .then(completedata => console.log(completedata)))
-        printGame();
-      }
-    
-     }
-  })
+        for (var i = 0; i < gameList.length; i++) {
+          console.log(gameList[i]);
+          getGame(gameList[i]);
+   }
+        })}
+  function getGame(gameList){
+    var gameData = "https://steam-special-offers.p.rapidapi/games_data/?app_id=" + JSON.stringify(gameList[i])
+    var fetchGame = function (res) {
+      fetch(gameData, options)
+      .then(res => res.json())
+      .then(data => console.log(data))
     }
+  }
+    
     // )
 // }
     
@@ -73,18 +73,18 @@ var steamList =
 //   }
 // }
 
-function printGame(completedata) {
-  console.log(completedata);
+function printGame(data) {
+  console.log(data);
   var gameCard = document.createElement("div");
   var resultBody = document.createElement("div");
   gameCard.append(resultBody);
   var titleEl = document.createElement("h3");
-  titleEl.textContent = completedata.title;
+  titleEl.textContent = data.title;
   var bodyText = document.createElement("p");
-  bodyText.textContent = completedata.price;
+  bodyText.textContent = data.price;
   var linkButtonEl = document.createElement("a");
   linkButtonEl.textContent = "Go to game";
-  linkButtonEl.setAttribute("href", completedata.url);
+  linkButtonEl.setAttribute("href", data.url);
 
   resultBody.append(titleEl, bodyText, linkButtonEl);
   game1.append(gameCard);
