@@ -75,8 +75,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    /* height: 450px; */
 }
+
 .coins{
     display: flex;
     justify-content: center;
@@ -90,7 +91,6 @@ main{
 .card-container{
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     margin: 25px;
     margin-top: 135px;
