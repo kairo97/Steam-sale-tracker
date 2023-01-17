@@ -1,5 +1,5 @@
 *{
-    background-color: #354f25;
+    /* background-color: #354f25; */
     color:white;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -51,9 +51,17 @@ header{
     font-size: 18px;
     font-weight: bolder;
 }
+.radiolabel{
+    background-color: darkslategrey;
+    padding: 5px;
+    border-radius: 5%;
+    border: solid black 2px;
+    /* border: #52796f 5px; */
+}
 
 body{
     background-color: #354f25;
+    background-image: url('https://images7.alphacoders.com/117/1178865.jpg');
 }
 main{
     display: flex;
@@ -80,6 +88,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background:darkslategrey;
 } 
 
 #get-game-container{
