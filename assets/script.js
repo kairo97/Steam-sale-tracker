@@ -45,6 +45,7 @@ newBtn.addEventListener('click', function () {
   newBtn1.classList.remove('hide')
 })
 newBtn1.addEventListener('click', function () {
+  
   fetchNewgame2()
   fetchNews()
   newBtn1.classList.add('hide');
