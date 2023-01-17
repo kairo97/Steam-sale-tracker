@@ -36,7 +36,35 @@ startBtn.addEventListener("click", function () {
   card2.classList.remove("hide");
   card3.classList.remove("hide");
   card4.classList.remove("hide");
-  newBtn.classList.remove('hide');
+
+  var addCoins = document.createElement('i');
+  addCoins.classList.add('nes-icon', 'coin', 'is-large');
+  var coins = document.getElementById('get-game-container');
+  coins.appendChild(addCoins);
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+
+    newBtn.classList.remove('hide');
 });
 newBtn.addEventListener('click', function () {
   fetchNewgame1()
