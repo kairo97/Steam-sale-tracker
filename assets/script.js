@@ -11,17 +11,17 @@ const options = {
     "X-RapidAPI-Host": "steam-special-offers.p.rapidapi.com",
   },
 };
-var civ6 = document.getElementById('civ6');
-var borderlands = document.getElementById('borderlands');
-var mafia = document.getElementById('mafia-img');
-var nba = document.getElementById('nba-img')
-var truck = document.getElementById('truck-img');
-var charles = document.getElementById('choochoo');
-var canada = document.getElementById('deathroad');
-var backroom = document.getElementById('backroom');
-var skul = document.getElementById('skul');
-var forza = document.getElementById('forza');
-var scum = document.getElementById('scum');
+var civ6 = document.getElementById("civ6");
+var borderlands = document.getElementById("borderlands");
+var mafia = document.getElementById("mafia-img");
+var nba = document.getElementById("nba-img");
+var truck = document.getElementById("truck-img");
+var charles = document.getElementById("choochoo");
+var canada = document.getElementById("deathroad");
+var backroom = document.getElementById("backroom");
+var skul = document.getElementById("skul");
+var forza = document.getElementById("forza");
+var scum = document.getElementById("scum");
 var startBtn = document.querySelector("#get-games");
 var newBtn = document.querySelector("#load-new-game");
 var newBtn1 = document.querySelector("#load-new-game1");
@@ -35,25 +35,24 @@ var newBtn8 = document.querySelector("#load-new-game8");
 var newBtn9 = document.querySelector("#load-new-game9");
 var newBtn10 = document.querySelector("#load-new-game10");
 var gamingNews = document.querySelector("#gaming-news");
+// startBtn.addEventListener("click", function () {
+//   fetchGame();
+//   fetchNews();
+//   startBtn.classList.add("hide");
+//   game1.classList.remove("hide");
+//   newBtn.classList.remove("hide");
+//   gamingNews.classList.remove("hide");
+//   mafia.classList.remove("hide");
+// });
 startBtn.addEventListener("click", function () {
-  fetchGame();
-  fetchNews();
-  startBtn.classList.add("hide");
-  game1.classList.remove("hide");
-  // card1.classList.remove("hide");
-  newBtn.classList.remove("hide");
-  gamingNews.classList.remove("hide");
-  mafia.classList.remove('hide')
-});
-newBtn.addEventListener("click", function () {
   fetchNewgame1();
   fetchNews();
-  newBtn.classList.add("hide");
   newBtn1.classList.remove("hide");
+  startBtn.classList.add('hide');
+  game1.classList.remove('hide');
   game1.innerHTML = "";
   footer.innerHTML = "";
-  nba.classList.remove('hide');
-  mafia.classList.add('hide');
+  nba.classList.remove('hide')
 });
 newBtn1.addEventListener("click", function () {
   fetchNewgame2();
@@ -62,8 +61,8 @@ newBtn1.addEventListener("click", function () {
   newBtn2.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  nba.classList.add('hide');
-  civ6.classList.remove('hide');
+  nba.classList.add("hide");
+  civ6.classList.remove("hide");
 });
 newBtn2.addEventListener("click", function () {
   fetchNewgame3();
@@ -72,8 +71,8 @@ newBtn2.addEventListener("click", function () {
   newBtn3.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  civ6.classList.add('hide');
-  borderlands.classList.remove('hide');
+  civ6.classList.add("hide");
+  borderlands.classList.remove("hide");
 });
 newBtn3.addEventListener("click", function () {
   fetchNewgame4();
@@ -82,8 +81,8 @@ newBtn3.addEventListener("click", function () {
   newBtn4.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  borderlands.classList.add('hide');
-  charles.classList.remove('hide');
+  borderlands.classList.add("hide");
+  charles.classList.remove("hide");
 });
 newBtn4.addEventListener("click", function () {
   fetchNewgame5();
@@ -92,8 +91,8 @@ newBtn4.addEventListener("click", function () {
   newBtn5.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  charles.classList.add('hide');
-  truck.classList.remove('hide');
+  charles.classList.add("hide");
+  truck.classList.remove("hide");
 });
 newBtn5.addEventListener("click", function () {
   fetchNewgame6();
@@ -102,8 +101,8 @@ newBtn5.addEventListener("click", function () {
   newBtn6.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  truck.classList.add('hide');
-  canada.classList.remove('hide');
+  truck.classList.add("hide");
+  canada.classList.remove("hide");
 });
 newBtn6.addEventListener("click", function () {
   fetchNewgame7();
@@ -112,8 +111,8 @@ newBtn6.addEventListener("click", function () {
   newBtn7.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  canada.classList.add('hide');
-  backroom.classList.remove('hide');
+  canada.classList.add("hide");
+  backroom.classList.remove("hide");
 });
 newBtn7.addEventListener("click", function () {
   fetchNewgame8();
@@ -122,8 +121,8 @@ newBtn7.addEventListener("click", function () {
   newBtn8.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  backroom.classList.add('hide');
-  skul.classList.remove('hide');
+  backroom.classList.add("hide");
+  skul.classList.remove("hide");
 });
 newBtn8.addEventListener("click", function () {
   fetchNewgame9();
@@ -132,8 +131,8 @@ newBtn8.addEventListener("click", function () {
   newBtn9.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  skul.classList.add('hide');
-  forza.classList.remove('hide');
+  skul.classList.add("hide");
+  forza.classList.remove("hide");
 });
 newBtn9.addEventListener("click", function () {
   fetchNewgame10();
@@ -142,8 +141,7 @@ newBtn9.addEventListener("click", function () {
   newBtn10.classList.remove("hide");
   game1.innerHTML = "";
   footer.innerHTML = "";
-  forza.classList.add('hide');
-
+  forza.classList.add("hide");
 });
 newBtn10.addEventListener("click", function () {
   fetchGame();

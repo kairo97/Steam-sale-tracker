@@ -56,6 +56,7 @@ header {
   /* border: #52796f 5px; */
 }
 .newBtn {
+    display: flex;
   top: 200px;
   left: 400px;
   width: 120px;
@@ -212,6 +213,9 @@ main{
 }
 .hide {
   display: none;
+}
+.show{
+    display: block;
 }
 @media screen and (max-width: 992px) {
   #placeholder {
