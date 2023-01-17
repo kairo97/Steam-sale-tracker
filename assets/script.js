@@ -45,61 +45,62 @@ newBtn.addEventListener('click', function () {
   newBtn1.classList.remove('hide')
 })
 newBtn1.addEventListener('click', function () {
-  fetchNewgame1()
+  
+  fetchNewgame2()
   fetchNews()
   newBtn1.classList.add('hide');
   newBtn2.classList.remove('hide')
 })
 newBtn2.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame3()
   fetchNews()
   newBtn2.classList.add('hide');
   newBtn3.classList.remove('hide')
 })
 newBtn3.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame4()
   fetchNews()
   newBtn3.classList.add('hide');
   newBtn4.classList.remove('hide')
 })
 newBtn4.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame5()
   fetchNews()
   newBtn4.classList.add('hide');
   newBtn5.classList.remove('hide')
 })
 newBtn5.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame6()
   fetchNews()
   newBtn5.classList.add('hide');
   newBtn6.classList.remove('hide')
 })
 newBtn6.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame7()
   fetchNews()
   newBtn6.classList.add('hide');
   newBtn7.classList.remove('hide')
 })
 newBtn7.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame8()
   fetchNews()
   newBtn7.classList.add('hide');
   newBtn8.classList.remove('hide')
 })
 newBtn8.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame9()
   fetchNews()
   newBtn8.classList.add('hide');
   newBtn9.classList.remove('hide')
 })
 newBtn9.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame10()
   fetchNews()
   newBtn9.classList.add('hide');
   newBtn10.classList.remove('hide')
 })
 newBtn10.addEventListener('click', function () {
-  fetchNewgame10()
+  fetchNewgame11()
   fetchNews()
   newBtn10.classList.add('hide');
 
