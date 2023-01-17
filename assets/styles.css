@@ -8,17 +8,20 @@
 
 /* Place holder for ads space */
 
-.header{
+header{
     width: 100%;
     height: 90px;
-    background-color:  #354f25;
+    background-color:  darkslategrey;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
-
-
+.header-container{
+    background-color: darkslategrey;
+}
+.snes-jp-logo{
+    background-color: darkslategrey;
+}
 #header{
     padding:5px;
     padding-bottom: 15px;
@@ -48,11 +51,24 @@
     font-size: 18px;
     font-weight: bolder;
 }
+.newBtn{
+top: 80px;
+left: 500px;
+width: 120px;
+height:60px;
+}
+#game1{
+    margin-top: 60px;
+}
 
 body{
     background-color: #354f25;
 }
-
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -89,7 +105,7 @@ body{
     left: 50px;
 }
 #get-games{
-    background-color: purple;
+    /* background-color: purple; */
     border-radius: 5px;
 }
 
@@ -101,13 +117,15 @@ body{
 .subcontainer{
     display:flex ;
     justify-content: space-around;
+    align-items: center;
     background-color: darkslategray;
     margin-bottom: 0;
     padding: 5px;
     padding-top: 0px;
     padding-bottom:10px;
-    width: 100%;
-    height: 75px;
+    width: 100vw;
+    height: 100px;
+    
 
 }
 #gaming-news{

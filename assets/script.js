@@ -3,10 +3,7 @@
 // Games Data API Connection
 var game1 = document.querySelector("#game1");
 var controllers = document.querySelector('#controllers')
-var card1 = document.querySelector("#placeholder1");
-var card2 = document.querySelector("#placeholder2");
-var card3 = document.querySelector("#placeholder3");
-var card4 = document.querySelector("#placeholder4");
+var card1 = document.querySelector("#placeholder");
 const options = {
   method: "GET",
   headers: {
@@ -33,10 +30,34 @@ startBtn.addEventListener("click", function () {
   controllers.classList.add("hide");
   game1.classList.remove("hide");
   card1.classList.remove("hide");
-  card2.classList.remove("hide");
-  card3.classList.remove("hide");
-  card4.classList.remove("hide");
-  newBtn.classList.remove('hide');
+  var addCoins = document.createElement('i');
+  addCoins.classList.add('nes-icon', 'coin', 'is-large');
+  var coins = document.getElementById('get-game-container');
+  coins.appendChild(addCoins);
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+  coins.appendChild(addCoins.cloneNode(true));
+
+    newBtn.classList.remove('hide');
 });
 newBtn.addEventListener('click', function () {
   fetchNewgame1()
