@@ -188,7 +188,8 @@ main{
     min-width:200px;
     position: relative;
     object-fit: contain;
-    right:20px;
+    right:6px;
+    top:7px;
 }
 .footerimg{
     height: 80px;
