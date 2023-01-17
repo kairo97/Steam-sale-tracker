@@ -1,187 +1,179 @@
-*{
-    color:white;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
+* {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
 
-/* Place holder for ads space */
-
-header{
-    width: 100%;
-    height: 90px;
-    background-color:  darkslategrey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+  width: 100%;
+  height: 90px;
+  background-color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header-container{
-    background-color: darkslategrey;
+.header-container {
+  background-color: darkslategrey;
 }
-.snes-jp-logo{
-    background-color: darkslategrey;
+.snes-jp-logo {
+  background-color: darkslategrey;
 }
-#header{
-    padding:5px;
-    padding-bottom: 15px;
-    font-size: 45px;
-    display: flex;
-    justify-content:center ;
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-    background-color: darkslategrey;
+#header {
+  padding: 5px;
+  padding-bottom: 15px;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  background-color: darkslategrey;
 }
 
-.headerlogo{
-    height: 70px;
-    position: absolute;
-    left: 30px;
-    background-color: transparent;
+.headerlogo {
+  height: 70px;
+  position: absolute;
+  left: 30px;
+  background-color: transparent;
 }
 
-.radio{
-    /* display: none; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bolder;
+.radio {
+  /* display: none; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bolder;
 }
-.radiolabel{
-    background-color: darkslategrey;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid black 2px;
-    /* border: #52796f 5px; */
+.radiolabel {
+  background-color: darkslategrey;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid black 2px;
+  /* border: #52796f 5px; */
 }
-.newBtn{
-top: 80px;
-left: 500px;
-width: 120px;
-height:60px;
+.newBtn {
+  top: 80px;
+  left: 500px;
+  width: 120px;
+  height: 60px;
 }
-#game1{
-    margin-top: 60px;
+#game1 {
+  margin-top: 60px;
 }
 
-body{
-    background-color: #354f25;
-    background-image: url('https://images7.alphacoders.com/117/1178865.jpg');
+body {
+  background-color: #354f25;
+  background-image: url("https://images7.alphacoders.com/117/1178865.jpg");
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    /* height: 450px; */
 }
-.coins{
-    display: flex;
-    justify-content: center;
+.coins {
+  display: flex;
+  justify-content: center;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.card-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 25px;
-    margin-top: 135px;
-    width: 20%;
-    z-index: 0;
-    /* border:solid black 2px; */
-    
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px;
+  margin-top: 135px;
+  width: 20%;
+  z-index: 0;
+  /* border:solid black 2px; */
 }
-.card{
-    width: 350px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background:darkslategrey;
-    /* object-fit: contain; */
-} 
-.card h3{
-    display: block;
+.card {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: darkslategrey;
+  /* object-fit: contain; */
 }
-#get-game-container{
-    width: 98vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+.card h3 {
+  display: block;
 }
-#controllers{
-    height: 200px;
-    width:600px;
-    position: relative;
-    left: 50px;
+#get-game-container {
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-#get-games{
-    border-radius: 5px;
+#controllers {
+  height: 200px;
+  width: 600px;
+  position: relative;
+  left: 50px;
+}
+#get-games {
+  border-radius: 5px;
 }
 
-#icons{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#icons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-.subcontainer{
-    display:flex ;
-    justify-content: space-around;
-    align-items: center;
-    background-color: darkslategray;
-    margin-bottom: 0;
-    padding: 5px;
-    padding-top: 0px;
-    padding-bottom:10px;
-    width: 100vw;
-    height: 100px;
-    
-
+.subcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkslategray;
+  margin-bottom: 0;
+  padding: 5px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  width: 100vw;
+  height: 100px;
 }
-#gaming-news{
-    background-color: transparent;
-    justify-content: center;
+#gaming-news {
+  background-color: transparent;
+  justify-content: center;
 }
-#gaming-news-header{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 0px;
-    background-color: darkslategrey;
-    width: 60%;
-    border: solid black 2px;
-    border-radius: 12px;
+#gaming-news-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 0px;
+  background-color: darkslategrey;
+  width: 60%;
+  border: solid black 2px;
+  border-radius: 12px;
 }
 
 .subcontainer p {
-    display: flex;
-    background-color: darkslategray;
-    align-items: flex-end;
-    justify-content: left;
-    text-align: center;
-    position: absolute;
+  display: flex;
+  background-color: darkslategray;
+  align-items: flex-end;
+  justify-content: left;
+  text-align: center;
+  position: absolute;
 }
 
-
-.btn-nav{
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
+.btn-nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
 }
-.nes-btn{
-    background-color: #52796f;
+.nes-btn {
+  background-color: #52796f;
 }
 .game-img{
     min-height:280px;
@@ -191,118 +183,115 @@ main{
     right:6px;
     top:7px;
 }
-.footerimg{
-    height: 80px;
-    flex-direction: row;
+.footerimg {
+  height: 80px;
+  flex-direction: row;
 }
-#vaultboy{
-    order:-1;
+#vaultboy {
+  order: -1;
 }
-#vaulthunter{
-    order:-2;
-
+#vaulthunter {
+  order: -2;
 }
-.foot div div{
-    background-color: darkslategray;
-
+.foot div div {
+  background-color: darkslategray;
 }
 
-#link{
-    width: 80px;
-    object-fit: cover;
-    order:+2;
+#link {
+  width: 80px;
+  object-fit: cover;
+  order: +2;
 }
-#bulba{
-    background-color: darkslategray;
-    order:+1;
+#bulba {
+  background-color: darkslategray;
+  order: +1;
 }
-.wrapper{
-    display: flex;
+.wrapper {
+  display: flex;
 }
 .hide {
-    display: none;
+  display: none;
 }
 @media screen and (max-width: 992px) {
-    #placeholder{
-        min-height:300px;
-        min-width:200px;
-        position: relative;
-        object-fit: contain;
-    }
-    .nes-btn{
-        width: 15%;
-    }
-    .genre-card{
-        width: 30%;
-    }
-    .card3{
-        display: none;
-    }
-    #game3 {
-        display: none;
-    }
-    .card4{
-        display: none;
-    }
-    #game4 {
-        display: none;
-    }
-    #gaming-news-header {
-        bottom: 200px
-    }
+  #placeholder {
+    min-height: 300px;
+    min-width: 200px;
+    position: relative;
+    object-fit: contain;
+  }
+  .nes-btn {
+    width: 15%;
+  }
+  .genre-card {
+    width: 30%;
+  }
+  .card3 {
+    display: none;
+  }
+  #game3 {
+    display: none;
+  }
+  .card4 {
+    display: none;
+  }
+  #game4 {
+    display: none;
+  }
+  #gaming-news-header {
+    bottom: 200px;
+  }
 }
 @media screen and (max-width: 768px) {
-    #placeholder{
-        min-height:250px;
-        min-width:150px;
-        position: relative;
-        object-fit: contain;
-    }
-    .nes-btn{
-        width: 25%;
-    }
-    #genres{
-        flex-wrap: wrap;
-    }
-    .card1 {
-        width:55%;
-        min-width:220px;
-        align-content: center;
-        justify-content: center;
-}
-    #placeholder {
-        justify-content: center;
-        align-items: center;
-        left: 2px;
-    }
-    .card2 {
-        display: none;
-    }
-    #game2 {
-        display: none;
-    }
-    .card3 {
-        display: none;
-        
-    }
-    #game3 {
-        display: none;
-    }
-    .card4 {
-        display: none;
-    }
-    #game4 {
-        display: none;
-    }
-    #gaming-news-header {
-        bottom: 350px;
-    }
-} 
-@media screen and (max-width: 576px) {
-    #placeholder{
-        min-height: 200px;
-        min-width:100px;
-        position: relative;
-        object-fit: contain;
-    }
+  #placeholder {
+    min-height: 250px;
+    min-width: 150px;
+    position: relative;
+    object-fit: contain;
   }
+  .nes-btn {
+    width: 25%;
+  }
+  #genres {
+    flex-wrap: wrap;
+  }
+  .card1 {
+    width: 55%;
+    min-width: 220px;
+    align-content: center;
+    justify-content: center;
+  }
+  #placeholder {
+    justify-content: center;
+    align-items: center;
+    left: 2px;
+  }
+  .card2 {
+    display: none;
+  }
+  #game2 {
+    display: none;
+  }
+  .card3 {
+    display: none;
+  }
+  #game3 {
+    display: none;
+  }
+  .card4 {
+    display: none;
+  }
+  #game4 {
+    display: none;
+  }
+  #gaming-news-header {
+    bottom: 350px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #placeholder {
+    min-height: 200px;
+    min-width: 100px;
+    position: relative;
+    object-fit: contain;
+  }
+}
