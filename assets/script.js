@@ -23,41 +23,19 @@ var newBtn7 = document.querySelector('#load-new-game7');
 var newBtn8 = document.querySelector('#load-new-game8');
 var newBtn9 = document.querySelector('#load-new-game9');
 var newBtn10 = document.querySelector('#load-new-game10');
+var gamingNews = document.querySelector('#gaming-news')
 startBtn.addEventListener("click", function () {
   fetchGame();
   fetchNews();
   startBtn.classList.add("hide");
-  controllers.classList.add("hide");
   game1.classList.remove("hide");
   card1.classList.remove("hide");
-  var addCoins = document.createElement('i');
-  addCoins.classList.add('nes-icon', 'coin', 'is-large');
-  var coins = document.getElementById('get-game-container');
-  coins.appendChild(addCoins);
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
+  card2.classList.remove("hide");
+  card3.classList.remove("hide");
+  card4.classList.remove("hide");
+  newBtn.classList.remove('hide');
+  gamingNews.classList.remove('hide')
 
-    newBtn.classList.remove('hide');
 });
 newBtn.addEventListener('click', function () {
   fetchNewgame1()
