@@ -85,7 +85,7 @@ main{
     display: flex;
     justify-content: center;
     width: 100%;
-
+    
 }
 .card-container{
     position: relative;
@@ -95,10 +95,11 @@ main{
     margin: 25px;
     margin-top: 135px;
     width: 20%;
+    z-index: 0;
     /* border:solid black 2px; */
-
+    
 }
- .card{
+.card{
     width: 350px;
     height: 500px;
     display: flex;
@@ -182,12 +183,12 @@ main{
 .nes-btn{
     background-color: #52796f;
 }
-#placeholder{
-    min-height:300px;
+.game-img{
+    min-height:280px;
     min-width:200px;
     position: relative;
     object-fit: contain;
-    right:25px;
+    right:20px;
 }
 .footerimg{
     height: 80px;
