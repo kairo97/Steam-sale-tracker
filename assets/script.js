@@ -1,7 +1,7 @@
 // jQuery selectors
 
 // Games Data API Connection
-var game1 = document.querySelector("#game1");
+var game1 = document.querySelector(".nes-container");
 var controllers = document.querySelector('#controllers')
 var card1 = document.querySelector("#placeholder");
 const options = {
@@ -30,9 +30,6 @@ startBtn.addEventListener("click", function () {
   startBtn.classList.add("hide");
   game1.classList.remove("hide");
   card1.classList.remove("hide");
-  card2.classList.remove("hide");
-  card3.classList.remove("hide");
-  card4.classList.remove("hide");
   newBtn.classList.remove('hide');
   gamingNews.classList.remove('hide')
 
