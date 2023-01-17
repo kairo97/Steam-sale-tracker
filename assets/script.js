@@ -64,6 +64,7 @@ newBtn.addEventListener('click', function () {
   fetchNews()
   newBtn.classList.add('hide');
   newBtn1.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn1.addEventListener('click', function () {
   
@@ -71,59 +72,69 @@ newBtn1.addEventListener('click', function () {
   fetchNews()
   newBtn1.classList.add('hide');
   newBtn2.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn2.addEventListener('click', function () {
   fetchNewgame3()
   fetchNews()
   newBtn2.classList.add('hide');
   newBtn3.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn3.addEventListener('click', function () {
   fetchNewgame4()
   fetchNews()
   newBtn3.classList.add('hide');
   newBtn4.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn4.addEventListener('click', function () {
   fetchNewgame5()
   fetchNews()
   newBtn4.classList.add('hide');
   newBtn5.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn5.addEventListener('click', function () {
   fetchNewgame6()
   fetchNews()
   newBtn5.classList.add('hide');
   newBtn6.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn6.addEventListener('click', function () {
   fetchNewgame7()
   fetchNews()
   newBtn6.classList.add('hide');
   newBtn7.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn7.addEventListener('click', function () {
   fetchNewgame8()
   fetchNews()
   newBtn7.classList.add('hide');
   newBtn8.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn8.addEventListener('click', function () {
   fetchNewgame9()
   fetchNews()
   newBtn8.classList.add('hide');
   newBtn9.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn9.addEventListener('click', function () {
   fetchNewgame10()
   fetchNews()
   newBtn9.classList.add('hide');
   newBtn10.classList.remove('hide')
+  game1.innerHTML = ''
 })
 newBtn10.addEventListener('click', function () {
-  fetchNewgame11()
+  fetchGame()
   fetchNews()
   newBtn10.classList.add('hide');
+  game1.innerHTML = ''
 
 })
 var fetchNewgame1 = function (data) {
@@ -282,6 +293,7 @@ function printGame(data) {
   resultBody.append(titleEl, bodyText, linkButtonEl, origPrice);
   game1.append(gameCard);
 }
+
 
 // Recent Gaming News API Connection
 const optionZ = {
