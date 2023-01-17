@@ -3,10 +3,7 @@
 // Games Data API Connection
 var game1 = document.querySelector("#game1");
 var controllers = document.querySelector('#controllers')
-var card1 = document.querySelector("#placeholder1");
-var card2 = document.querySelector("#placeholder2");
-var card3 = document.querySelector("#placeholder3");
-var card4 = document.querySelector("#placeholder4");
+var card1 = document.querySelector("#placeholder");
 const options = {
   method: "GET",
   headers: {
@@ -31,7 +28,6 @@ startBtn.addEventListener("click", function () {
   fetchGame();
   fetchNews();
   startBtn.classList.add("hide");
-  // controllers.classList.add("hide");
   game1.classList.remove("hide");
   card1.classList.remove("hide");
   card2.classList.remove("hide");
@@ -48,61 +44,62 @@ newBtn.addEventListener('click', function () {
   newBtn1.classList.remove('hide')
 })
 newBtn1.addEventListener('click', function () {
-  fetchNewgame1()
+  
+  fetchNewgame2()
   fetchNews()
   newBtn1.classList.add('hide');
   newBtn2.classList.remove('hide')
 })
 newBtn2.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame3()
   fetchNews()
   newBtn2.classList.add('hide');
   newBtn3.classList.remove('hide')
 })
 newBtn3.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame4()
   fetchNews()
   newBtn3.classList.add('hide');
   newBtn4.classList.remove('hide')
 })
 newBtn4.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame5()
   fetchNews()
   newBtn4.classList.add('hide');
   newBtn5.classList.remove('hide')
 })
 newBtn5.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame6()
   fetchNews()
   newBtn5.classList.add('hide');
   newBtn6.classList.remove('hide')
 })
 newBtn6.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame7()
   fetchNews()
   newBtn6.classList.add('hide');
   newBtn7.classList.remove('hide')
 })
 newBtn7.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame8()
   fetchNews()
   newBtn7.classList.add('hide');
   newBtn8.classList.remove('hide')
 })
 newBtn8.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame9()
   fetchNews()
   newBtn8.classList.add('hide');
   newBtn9.classList.remove('hide')
 })
 newBtn9.addEventListener('click', function () {
-  fetchNewgame1()
+  fetchNewgame10()
   fetchNews()
   newBtn9.classList.add('hide');
   newBtn10.classList.remove('hide')
 })
 newBtn10.addEventListener('click', function () {
-  fetchNewgame10()
+  fetchNewgame11()
   fetchNews()
   newBtn10.classList.add('hide');
 
@@ -249,7 +246,7 @@ fetch(gameData, options)
 function printGame(data) {
   var gameCard = document.createElement("div");
   var resultBody = document.createElement("div");
-  gameCard.append(resultBody);
+  
   var titleEl = document.createElement("h3");
   titleEl.textContent = data.title;
   var bodyText = document.createElement("p");
@@ -257,10 +254,11 @@ function printGame(data) {
   var origPrice = document.createElement('p');
   origPrice.textContent = data.original_price;
   var linkButtonEl = document.createElement("a");
+  
   linkButtonEl.textContent = "Go to game";
   linkButtonEl.setAttribute("href", data.url);
-
   resultBody.append(titleEl, bodyText, linkButtonEl, origPrice);
+  gameCard.append(resultBody);
   game1.append(gameCard);
 }
 
