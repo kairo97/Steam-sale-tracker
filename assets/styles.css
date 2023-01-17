@@ -51,6 +51,15 @@ header{
     font-size: 18px;
     font-weight: bolder;
 }
+.newBtn{
+top: 80px;
+left: 500px;
+width: 120px;
+height:60px;
+}
+#game1{
+    margin-top: 60px;
+}
 
 body{
     background-color: #354f25;
