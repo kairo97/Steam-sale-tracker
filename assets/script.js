@@ -1,4 +1,4 @@
-//jQuery selectors
+// jQuery selectors
 
 // Games Data API Connection
 var game1 = document.querySelector("#game1");
@@ -14,14 +14,21 @@ const options = {
     "X-RapidAPI-Host": "steam-special-offers.p.rapidapi.com",
   },
 };
-// function getRandomNumber(max){
-// return Math.floor(Math.random()*max);
-// }
 var startBtn = document.querySelector("#get-games");
-
+var newBtn = document.querySelector('#load-new-game');
+var newBtn1 = document.querySelector('#load-new-game1');
+var newBtn2 = document.querySelector('#load-new-game2');
+var newBtn3 = document.querySelector('#load-new-game3');
+var newBtn4 = document.querySelector('#load-new-game4');
+var newBtn5 = document.querySelector('#load-new-game5');
+var newBtn6 = document.querySelector('#load-new-game6');
+var newBtn7 = document.querySelector('#load-new-game7');
+var newBtn8 = document.querySelector('#load-new-game8');
+var newBtn9 = document.querySelector('#load-new-game9');
+var newBtn10 = document.querySelector('#load-new-game10');
 startBtn.addEventListener("click", function () {
-  // fetchsteam();
-  // fetchNews();
+  fetchGame();
+  fetchNews();
   startBtn.classList.add("hide");
   controllers.classList.add("hide");
   game1.classList.remove("hide");
@@ -29,6 +36,7 @@ startBtn.addEventListener("click", function () {
   card2.classList.remove("hide");
   card3.classList.remove("hide");
   card4.classList.remove("hide");
+  newBtn.classList.remove('hide');
 
   var addCoins = document.createElement('i');
   addCoins.classList.add('nes-icon', 'coin', 'is-large');
@@ -57,62 +65,226 @@ startBtn.addEventListener("click", function () {
   coins.appendChild(addCoins.cloneNode(true));
   coins.appendChild(addCoins.cloneNode(true));
 });
+newBtn.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn.classList.add('hide');
+  newBtn1.classList.remove('hide')
+})
+newBtn1.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn1.classList.add('hide');
+  newBtn2.classList.remove('hide')
+})
+newBtn2.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn2.classList.add('hide');
+  newBtn3.classList.remove('hide')
+})
+newBtn3.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn3.classList.add('hide');
+  newBtn4.classList.remove('hide')
+})
+newBtn4.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn4.classList.add('hide');
+  newBtn5.classList.remove('hide')
+})
+newBtn5.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn5.classList.add('hide');
+  newBtn6.classList.remove('hide')
+})
+newBtn6.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn6.classList.add('hide');
+  newBtn7.classList.remove('hide')
+})
+newBtn7.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn7.classList.add('hide');
+  newBtn8.classList.remove('hide')
+})
+newBtn8.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn8.classList.add('hide');
+  newBtn9.classList.remove('hide')
+})
+newBtn9.addEventListener('click', function () {
+  fetchNewgame1()
+  fetchNews()
+  newBtn9.classList.add('hide');
+  newBtn10.classList.remove('hide')
+})
+newBtn10.addEventListener('click', function () {
+  fetchNewgame10()
+  fetchNews()
+  newBtn10.classList.add('hide');
 
-var steamList =
-  "https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=100&region=US";
-  var fetchsteam = function (response) {
-    fetch(steamList, options)
-    .then(response => 
-      response.json()
-      )
-      .then(data => {
-        var json2string = JSON.stringify(data.games_list);
-        var gameList = json2string.split()
-        console.log(gameList);
-        for (var i = 0; i < gameList.length; i ++) {
-          var randomGame = gameList[i]
-       var gameId = "https://steam-special-offers.p.rapidapi.com/games_list/?" + randomGame;
-      var fetchGame = function(data) {
-        fetch(gameId, options)
-        .then(data => data.json()
-        .then(completedata => console.log(completedata)))
-        printGame();
-      }
-    
-     }
+})
+var fetchNewgame1 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[1]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
   })
-    }
-    // )
-// }
-    
-      
-    // var fetchGame = function(data) {
-    //   fetch(gameId, options)
-    //   .then(data => data.json()
-    //   .then(completedata => console.log(completedata)))
-    //   printGame();
-    // }
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame2 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[2]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame3 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[3]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame4 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[4]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame5 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[5]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame6 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[6]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame7 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[7]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame8 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[8]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame9 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[9]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var fetchNewgame10 = function (data) {
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[10]
+  fetch(gameData, options)
+  .then((data) => {
+    return data.json();
+  })
+  .then((data) => {
+    console.log(data);
+    printGame(data);
+  })
+}
+var appId = [
+  "1030840",
+  "1919590",
+  "289070",
+  "397540",
+  "1766740",
+  "227300",
+  "252610",
+  "1943950",
+  "1147560",
+  "1293830",
+  "119776",
+  
+]
 
-// function getGames(completedata){
-//   for (var i = 0; i < completedata.length; i++){
 
-//   }
-// }
+var fetchGame = function (data) {
+  
+  gameData = "https://steam-special-offers.p.rapidapi.com/games_data/?app_id=" + appId[0]
+fetch(gameData, options)
+      .then((data) => {
+        return data.json();
+      })
+      .then((data) => {
+        console.log(data);
+        printGame(data);
+      });
+   } 
 
-function printGame(completedata) {
-  console.log(completedata);
+function printGame(data) {
   var gameCard = document.createElement("div");
   var resultBody = document.createElement("div");
   gameCard.append(resultBody);
   var titleEl = document.createElement("h3");
-  titleEl.textContent = completedata.title;
+  titleEl.textContent = data.title;
   var bodyText = document.createElement("p");
-  bodyText.textContent = completedata.price;
+  bodyText.textContent = data.price;
+  var origPrice = document.createElement('p');
+  origPrice.textContent = data.original_price;
   var linkButtonEl = document.createElement("a");
   linkButtonEl.textContent = "Go to game";
-  linkButtonEl.setAttribute("href", completedata.url);
+  linkButtonEl.setAttribute("href", data.url);
 
-  resultBody.append(titleEl, bodyText, linkButtonEl);
+  resultBody.append(titleEl, bodyText, linkButtonEl, origPrice);
   game1.append(gameCard);
 }
 
@@ -129,28 +301,14 @@ function fetchNews() {
     "https://videogames-news2.p.rapidapi.com/videogames_news/recent",
     optionZ
   )
-    .then((data) => {
-      return data.json();
-    })
-    .then((completedata) => {
-      console.log(completedata);
-      printNews(completedata);
-    });
+  .then((data) => {
+    return data.json();
+  })
+  .then((completedata) => {
+    console.log(completedata);
+    printNews(completedata);
+  });
 }
-
-//  Games List API Connection
-//  const optionY = {
-// method: 'GET',
-// headers: {
-// 'X-RapidAPI-Key': 'fc98b95498mshba10dc92df84595p1eeda7jsne575863c62de',
-// 'X-RapidAPI-Host': 'steam-special-offers.p.rapidapi.com'
-// }
-//  };
-//  fetch('https://steam-special-offers.p.rapidapi.com/games_list/?start=0&count=4&region=IN', optionY)
-
-// .then(response => response.json())
-// .then(response => console.log(response))
-// .catch(err => console.error(err));
 var footer = document.querySelector("#gaming-news-header");
 function printNews(completedata) {
   var newsCard = document.createElement("div");
