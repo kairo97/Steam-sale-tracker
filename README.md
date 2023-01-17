@@ -6,6 +6,7 @@ I want an easy, friendly and more streamline website
 So that I can easily track which game goes on sale.
 ```
 ## Description
+
 The motivation behind this project was to create an application that would be more user friendly than what the current webpage has to offer. Being an advocate gamer who struggles to find games at a cheaper price, a majority of the userbase will look to SteamPowered, which sells video games online. However, the problems in which user faces are the website itself. The page is complicated and overflowed with information that can deter users from looking any further. As users aim to only look for games that are on sale without scrolling or clicking on multiple paths to find what they are looking for, we aim to quickly solve that problem. Using HTML, JavaScript, Css and Apis, we look to build a website that allows users directly to find games at a cheaper price. 
 
 This solves the need of an individual who doens't have time to shift through endless data or someone without a lot of computer experince to find what they are looking for. 

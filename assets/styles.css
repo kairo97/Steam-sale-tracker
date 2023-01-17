@@ -1,5 +1,4 @@
 *{
-    background-color: #354f25;
     color:white;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -51,6 +50,13 @@ header{
     font-size: 18px;
     font-weight: bolder;
 }
+.radiolabel{
+    background-color: darkslategrey;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid black 2px;
+    /* border: #52796f 5px; */
+}
 .newBtn{
 top: 80px;
 left: 500px;
@@ -63,16 +69,23 @@ height:60px;
 
 body{
     background-color: #354f25;
+    background-image: url('https://images7.alphacoders.com/117/1178865.jpg');
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 450px;
+}
+.coins{
+    display: flex;
+    justify-content: center;
 }
 .container{
     display: flex;
     justify-content: center;
-
+    width: 100%;
+    
 }
 .card-container{
     position: relative;
@@ -80,17 +93,24 @@ main{
     flex-direction: column;
     justify-content: center;
     margin: 25px;
+    margin-top: 135px;
+    width: 20%;
+    z-index: 0;
     /* border:solid black 2px; */
-
+    
 }
- .card{
-    width: 200px;
-    height: 300px;
+.card{
+    width: 350px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background:darkslategrey;
+    /* object-fit: contain; */
 } 
-
+.card h3{
+    display: block;
+}
 #get-game-container{
     width: 98vw;
     display: flex;
@@ -105,7 +125,6 @@ main{
     left: 50px;
 }
 #get-games{
-    /* background-color: purple; */
     border-radius: 5px;
 }
 
@@ -129,18 +148,20 @@ main{
 
 }
 #gaming-news{
-    background-color: darkslategray;
-    /* position: fixed;
-    bottom: 125px; */
-
+    background-color: transparent;
+    justify-content: center;
 }
 #gaming-news-header{
-    /* display:flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     text-align: center;
     padding-top: 0px;
+    background-color: darkslategrey;
+    width: 60%;
+    border: solid black 2px;
+    border-radius: 12px;
 }
 
 .subcontainer p {
@@ -162,12 +183,12 @@ main{
 .nes-btn{
     background-color: #52796f;
 }
-#placeholder{
-    min-height:300px;
+.game-img{
+    min-height:280px;
     min-width:200px;
     position: relative;
     object-fit: contain;
-    right:25px;
+    right:20px;
 }
 .footerimg{
     height: 80px;
@@ -193,6 +214,9 @@ main{
 #bulba{
     background-color: darkslategray;
     order:+1;
+}
+.wrapper{
+    display: flex;
 }
 .hide {
     display: none;

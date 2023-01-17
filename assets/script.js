@@ -1,7 +1,7 @@
 // jQuery selectors
 
 // Games Data API Connection
-var game1 = document.querySelector("#game1");
+var game1 = document.querySelector(".nes-container");
 var controllers = document.querySelector('#controllers')
 var card1 = document.querySelector("#placeholder");
 const options = {
@@ -23,47 +23,25 @@ var newBtn7 = document.querySelector('#load-new-game7');
 var newBtn8 = document.querySelector('#load-new-game8');
 var newBtn9 = document.querySelector('#load-new-game9');
 var newBtn10 = document.querySelector('#load-new-game10');
+var gamingNews = document.querySelector('#gaming-news')
 startBtn.addEventListener("click", function () {
   fetchGame();
   fetchNews();
   startBtn.classList.add("hide");
-  controllers.classList.add("hide");
   game1.classList.remove("hide");
   card1.classList.remove("hide");
-  var addCoins = document.createElement('i');
-  addCoins.classList.add('nes-icon', 'coin', 'is-large');
-  var coins = document.getElementById('get-game-container');
-  coins.appendChild(addCoins);
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
-  coins.appendChild(addCoins.cloneNode(true));
+  newBtn.classList.remove('hide');
+  gamingNews.classList.remove('hide')
 
-    newBtn.classList.remove('hide');
+
 });
 newBtn.addEventListener('click', function () {
   fetchNewgame1()
   fetchNews()
   newBtn.classList.add('hide');
   newBtn1.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn1.addEventListener('click', function () {
   
@@ -71,59 +49,79 @@ newBtn1.addEventListener('click', function () {
   fetchNews()
   newBtn1.classList.add('hide');
   newBtn2.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn2.addEventListener('click', function () {
   fetchNewgame3()
   fetchNews()
   newBtn2.classList.add('hide');
   newBtn3.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn3.addEventListener('click', function () {
   fetchNewgame4()
   fetchNews()
   newBtn3.classList.add('hide');
   newBtn4.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn4.addEventListener('click', function () {
   fetchNewgame5()
   fetchNews()
   newBtn4.classList.add('hide');
   newBtn5.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn5.addEventListener('click', function () {
   fetchNewgame6()
   fetchNews()
   newBtn5.classList.add('hide');
   newBtn6.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn6.addEventListener('click', function () {
   fetchNewgame7()
   fetchNews()
   newBtn6.classList.add('hide');
   newBtn7.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn7.addEventListener('click', function () {
   fetchNewgame8()
   fetchNews()
   newBtn7.classList.add('hide');
   newBtn8.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn8.addEventListener('click', function () {
   fetchNewgame9()
   fetchNews()
   newBtn8.classList.add('hide');
   newBtn9.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn9.addEventListener('click', function () {
   fetchNewgame10()
   fetchNews()
   newBtn9.classList.add('hide');
   newBtn10.classList.remove('hide')
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn10.addEventListener('click', function () {
-  fetchNewgame11()
+  fetchGame()
   fetchNews()
   newBtn10.classList.add('hide');
+  game1.innerHTML = ''
+  footer.innerHTML = ''
 
 })
 var fetchNewgame1 = function (data) {
@@ -283,6 +281,7 @@ function printGame(data) {
   gameCard.append(resultBody);
   game1.append(gameCard);
 }
+
 
 // Recent Gaming News API Connection
 const optionZ = {
