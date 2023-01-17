@@ -56,8 +56,8 @@ header {
   /* border: #52796f 5px; */
 }
 .newBtn {
-  top: 80px;
-  left: 500px;
+  top: 200px;
+  left: 400px;
   width: 120px;
   height: 60px;
 }
@@ -93,6 +93,7 @@ main{
   margin-top: 135px;
   width: 20%;
   z-index: 0;
+  bottom: 200px;
   /* border:solid black 2px; */
 }
 .card {
