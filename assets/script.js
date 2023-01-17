@@ -65,6 +65,7 @@ newBtn.addEventListener('click', function () {
   newBtn.classList.add('hide');
   newBtn1.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn1.addEventListener('click', function () {
   
@@ -73,6 +74,7 @@ newBtn1.addEventListener('click', function () {
   newBtn1.classList.add('hide');
   newBtn2.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn2.addEventListener('click', function () {
   fetchNewgame3()
@@ -80,6 +82,7 @@ newBtn2.addEventListener('click', function () {
   newBtn2.classList.add('hide');
   newBtn3.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn3.addEventListener('click', function () {
   fetchNewgame4()
@@ -87,6 +90,7 @@ newBtn3.addEventListener('click', function () {
   newBtn3.classList.add('hide');
   newBtn4.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn4.addEventListener('click', function () {
   fetchNewgame5()
@@ -94,6 +98,7 @@ newBtn4.addEventListener('click', function () {
   newBtn4.classList.add('hide');
   newBtn5.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn5.addEventListener('click', function () {
   fetchNewgame6()
@@ -101,6 +106,7 @@ newBtn5.addEventListener('click', function () {
   newBtn5.classList.add('hide');
   newBtn6.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn6.addEventListener('click', function () {
   fetchNewgame7()
@@ -108,6 +114,7 @@ newBtn6.addEventListener('click', function () {
   newBtn6.classList.add('hide');
   newBtn7.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn7.addEventListener('click', function () {
   fetchNewgame8()
@@ -115,6 +122,7 @@ newBtn7.addEventListener('click', function () {
   newBtn7.classList.add('hide');
   newBtn8.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn8.addEventListener('click', function () {
   fetchNewgame9()
@@ -122,6 +130,7 @@ newBtn8.addEventListener('click', function () {
   newBtn8.classList.add('hide');
   newBtn9.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn9.addEventListener('click', function () {
   fetchNewgame10()
@@ -129,12 +138,14 @@ newBtn9.addEventListener('click', function () {
   newBtn9.classList.add('hide');
   newBtn10.classList.remove('hide')
   game1.innerHTML = ''
+  footer.innerHTML = ''
 })
 newBtn10.addEventListener('click', function () {
   fetchGame()
   fetchNews()
   newBtn10.classList.add('hide');
   game1.innerHTML = ''
+  footer.innerHTML = ''
 
 })
 var fetchNewgame1 = function (data) {
