@@ -33,6 +33,7 @@ startBtn.addEventListener("click", function () {
   newBtn.classList.remove('hide');
   gamingNews.classList.remove('hide')
 
+
 });
 newBtn.addEventListener('click', function () {
   fetchNewgame1()
