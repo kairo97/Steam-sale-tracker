@@ -175,12 +175,13 @@ main{
 .nes-btn {
   background-color: #52796f;
 }
-.game-img {
-  min-height: 280px;
-  min-width: 200px;
-  position: relative;
-  object-fit: contain;
-  right: 20px;
+.game-img{
+    min-height:280px;
+    min-width:200px;
+    position: relative;
+    object-fit: contain;
+    right:6px;
+    top:7px;
 }
 .footerimg {
   height: 80px;
