@@ -247,7 +247,7 @@ fetch(gameData, options)
 function printGame(data) {
   var gameCard = document.createElement("div");
   var resultBody = document.createElement("div");
-  gameCard.append(resultBody);
+  
   var titleEl = document.createElement("h3");
   titleEl.textContent = data.title;
   var bodyText = document.createElement("p");
@@ -255,10 +255,11 @@ function printGame(data) {
   var origPrice = document.createElement('p');
   origPrice.textContent = data.original_price;
   var linkButtonEl = document.createElement("a");
+  
   linkButtonEl.textContent = "Go to game";
   linkButtonEl.setAttribute("href", data.url);
-
   resultBody.append(titleEl, bodyText, linkButtonEl, origPrice);
+  gameCard.append(resultBody);
   game1.append(gameCard);
 }
 
